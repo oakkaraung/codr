@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import withAuth from './../components/withAuth';
 import API from './../utils/API';
 import { Link } from 'react-router-dom';
+//------------------------------------
+// THIS IS OUR TEMPLATE PAGE
+//------------------------------------
 
 class Profile extends Component {
 

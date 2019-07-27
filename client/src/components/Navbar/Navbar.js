@@ -11,15 +11,19 @@ class Navbar extends Component {
     showNavigation = () => {
         if (this.Auth.loggedIn()) {
             return (
-                <ul className="navbar-nav">
+                <nav className=" navbar-nav navbar-collapse">
+                <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
                         <Link className="nav-link" to="/profile">Templates</Link>
                     </li>
+                </ul>
+                <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
                         {/* this is not using the Link component to logout or user and then refresh the application to the start */}
                         <a className="nav-link" href="/" onClick={() => this.Auth.logout()}>Logout</a>
                     </li>
                 </ul>
+                </nav>
             );
         } else {
             return (

@@ -8,7 +8,7 @@ import About from "../components/About/About"
 function Home() {
     return (
         <div>
-       <Jumbotron>
+       <Jumbotron >
            <img src={logo} alt="CodrLogo" width="440px" height="400px"/><br></br><br></br><br></br>
            <button type="button" class="btn btn-primary">About</button>
         </Jumbotron>

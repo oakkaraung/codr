@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import withAuth from './../components/withAuth';
 import API from './../utils/API';
+// import { Col, Row, Container } from "../components/Grid";
 import { Link } from 'react-router-dom';
 // import About from '../components/About';
 import Jumbotron from "../components/Jumbotron/Jumbotron";
@@ -33,8 +34,9 @@ class Profile extends Component {
         <div className="container Profile">
           <h1>Choose a Template {this.state.username}!</h1>
         </div>
-        <Card />
+        
       </Jumbotron>
+      <Card />
       <Footer>
         <Link to="/">Go home</Link>
       </Footer>

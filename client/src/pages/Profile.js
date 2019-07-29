@@ -5,7 +5,8 @@ import { Col, Row, Container } from "../components/Grid";
 import { Link } from 'react-router-dom';
 // import About from '../components/About';
 import Jumbotron from "../components/Jumbotron/Jumbotron";
-import OnClickTemp from '../components/onClickTemp';
+import Card from '../components/Card';
+import Footer from '../components/Footer/Footer'
 //------------------------------------
 // THIS IS OUR TEMPLATE PAGE
 //------------------------------------
@@ -27,34 +28,22 @@ class Profile extends Component {
   }
 
   render() {
-    return (
-      <Container fluid>
-        <Row>
-          <Col size="md-12">
-            <Jumbotron>
-              {/* eddit the jumbo */}
-              <h1>What Books Should I Read?</h1>
-              <div className="container Profile">
-                <h1>On the profile page!</h1>
-                <p>Username: {this.state.username}</p>
-                <Link to="/">Go home</Link>
-              </div>
-            </Jumbotron>
-            <OnClickTemp />
-          </Col>
-        </Row>
-      </Container>
+    return (<div>
+      <Jumbotron>
+        <h1>Welcome to Codr!</h1>
+        <div className="container Profile">
+          <h1>Choose a Template {this.state.username}!</h1>
+        </div>
+        <Card />
+      </Jumbotron>
+      <Footer>
+        <Link to="/">Go home</Link>
+      </Footer>
+    </div>
     );
   }
 
 }
-
-
-
-
-
-
-
 
 
 export default withAuth(Profile);

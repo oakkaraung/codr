@@ -18,3 +18,8 @@
 .webTheme {
     background-color: #f55d42 !important
 }
+
+.footercss {
+    background: transparent !important;
+    border: 0px !important;
+}

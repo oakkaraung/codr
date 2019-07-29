@@ -12,7 +12,8 @@ function download(
     form5value,
     form6value,
     form7value,
-    form8value
+    form8value,
+    form9value
 ) {
     var fileContent = "";
     fileContent += `<html lang="en">
@@ -100,7 +101,7 @@ function download(
 
             <footer class="py-5 bg-black">
                 <div class="container">
-                    <p class="m-0 text-center text-white small">Copyright &copy; Your Website 2019</p>
+                    <p class="m-0 text-center text-black small">${form9value}</p>
                 </div>
 
             </footer>
@@ -207,6 +208,13 @@ function TemplateOne() {
                         </div>
                     </section>
 
+                    <footer className="py-5 bg-black text-center">
+                        <div className="container">
+                            <input type="text" id="h9Input" className="m-0 text-center text-black small footercss" placeholder="Copyright &copy; Your Website 2019"></input>
+                        </div>
+
+                    </footer>
+
                     <section>
                         <div className="row">
                             <div className="col-lg-6"></div>
@@ -220,6 +228,8 @@ function TemplateOne() {
                                     var formInput6 = document.getElementById("h6Input").value;
                                     var formInput7 = document.getElementById("h7Input").value;
                                     var formInput8 = document.getElementById("h8Input").value;
+                                    var formInput9 = document.getElementById("h9Input").value;
+
                                     download("index.html",
                                         formInput1,
                                         formInput2,
@@ -228,20 +238,14 @@ function TemplateOne() {
                                         formInput5,
                                         formInput6,
                                         formInput7,
-                                        formInput8
+                                        formInput8,
+                                        formInput9
                                     )
                                 }}>download</button>
                             </div>
                             <div className="col-lg-5"></div>
                         </div>
                     </section>
-
-                    <footer className="py-5 bg-black">
-                        <div className="container">
-                            <p className="m-0 text-center text-white small">Copyright &copy; Your Website 2019</p>
-                        </div>
-
-                    </footer>
                 </div>
                 <script src="vendor/jquery/jquery.min.js"></script>
                 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -18,3 +18,9 @@
 .webTheme {
     background-color: #f55d42 !important
 }
+
+.toptext {
+    background: transparent !important;
+    border: 0px !important;
+    font-size: 20px
+}

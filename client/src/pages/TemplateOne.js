@@ -17,33 +17,38 @@ function download(
     fileContent += `<html lang="en">
     <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <style>
+        .currentTheme {
+            background-color: #f55d42 !important;
+        }
+    </style>
     </head>
     <body>
 
         <div>
-
-            <header class="masthead text-center text-black">
-                <div class="masthead-content">
-                    <div class="container">
-                        <h1 type="text" placeholder="Welcome to my Website!" class="form-control form-control-lg">${form1value}</h1>
-                        <h2 class="masthead-subheading mb-0">${form2value}</h2>
-                        <a href="google.com" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
+            <div class="jumbotron currentTheme">
+                <header class="masthead text-center text-black">
+                    <div class="masthead-content">
+                        <div class="container">
+                            <h1 type="text" placeholder="Welcome to my Website!" class="form-control form-control-lg">${form1value}</h1>
+                            <h2 class="masthead-subheading mb-0">${form2value}</h2>
+                            <a href="google.com" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
+                        </div>
                     </div>
-                </div>
-                <div class="bg-circle-1 bg-circle"></div>
-                <div class="bg-circle-2 bg-circle"></div>
-                <div class="bg-circle-3 bg-circle"></div>
-                <div class="bg-circle-4 bg-circle"></div>
-                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-            </header>
+                    <div class="bg-circle-1 bg-circle"></div>
+                    <div class="bg-circle-2 bg-circle"></div>
+                    <div class="bg-circle-3 bg-circle"></div>
+                    <div class="bg-circle-4 bg-circle"></div>
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+                </header>
+            </div>
 
             <section>
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-6 order-lg-2">
                             <div class="p-5">
-                                <img class="img-fluid rounded-circle" src="img/01.jpg" alt="" />
+                                <img class="img-fluid rounded-circle" src="https://thumbs-prod.si-cdn.com/yxYtidKUcbMprBCzkC3AH2cnUQ4=/420x240/https://public-media.si-cdn.com/filer/54/10/5410da58-2295-4e3a-a847-fecd41cdcdd9/scarlet_tanager.jpg" alt="" />
                             </div>
                         </div>
                         <div class="col-lg-6 order-lg-1">
@@ -61,7 +66,7 @@ function download(
                     <div class="row align-items-center">
                         <div class="col-lg-6">
                             <div class="p-5">
-                                <img class="img-fluid rounded-circle" src="img/02.jpg" alt="" />
+                                <img class="img-fluid rounded-circle" src="https://www.hakaimagazine.com/wp-content/uploads/header-gulf-birds.jpg" alt="" />
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -79,7 +84,7 @@ function download(
                     <div class="row align-items-center">
                         <div class="col-lg-6 order-lg-2">
                             <div class="p-5">
-                                <img class="img-fluid rounded-circle" src="img/03.jpg" alt="" />
+                                <img class="img-fluid rounded-circle" src="http://justbirding.com/wp-content/uploads/2018/11/most-colorful-birds-on-the-planet.jpg" alt="" />
                             </div>
                         </div>
                         <div class="col-lg-6 order-lg-1">
@@ -126,28 +131,30 @@ function TemplateOne() {
         <html lang="en">
             <body>
                 <div>
-                    <header className="masthead text-center text-black">
-                        <div className="masthead-content">
-                            <div className="container">
-                                <input type="text" id="h1Input" placeholder="Welcome to my Website!" className="form-control form-control-lg" />
-                                <form>
-                                    <input type="text" id="h2Input" placeholder="For those About to Rock" className="masthead-subheading mb-0"></input>
-                                </form>
-                                <a href="google.com" className="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
+                    <div className="jumbotron currentTheme">
+                        <header className="masthead text-center text-black">
+                            <div className="masthead-content">
+                                <div className="container">
+                                    <input type="text" id="h1Input" placeholder="Welcome to my Website!" className="form-control form-control-lg" />
+                                    <form>
+                                        <input type="text" id="h2Input" placeholder="For those About to Rock" className="masthead-subheading mb-0"></input>
+                                    </form>
+                                    <a href="google.com" className="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
+                                </div>
                             </div>
-                        </div>
-                        <div className="bg-circle-1 bg-circle"></div>
-                        <div className="bg-circle-2 bg-circle"></div>
-                        <div className="bg-circle-3 bg-circle"></div>
-                        <div className="bg-circle-4 bg-circle"></div>
-                    </header>
+                            <div className="bg-circle-1 bg-circle"></div>
+                            <div className="bg-circle-2 bg-circle"></div>
+                            <div className="bg-circle-3 bg-circle"></div>
+                            <div className="bg-circle-4 bg-circle"></div>
+                        </header>
+                    </div>
 
                     <section>
                         <div className="container">
                             <div className="row align-items-center">
                                 <div className="col-lg-6 order-lg-2">
                                     <div className="p-5">
-                                        <img className="img-fluid rounded-circle" src="img/01.jpg" alt="" />
+                                        <img className="img-fluid rounded-circle" src="https://thumbs-prod.si-cdn.com/yxYtidKUcbMprBCzkC3AH2cnUQ4=/420x240/https://public-media.si-cdn.com/filer/54/10/5410da58-2295-4e3a-a847-fecd41cdcdd9/scarlet_tanager.jpg" alt="" />
                                     </div>
                                 </div>
                                 <div className="col-lg-6 order-lg-1">
@@ -167,7 +174,7 @@ function TemplateOne() {
                             <div className="row align-items-center">
                                 <div className="col-lg-6">
                                     <div className="p-5">
-                                        <img className="img-fluid rounded-circle" src="img/02.jpg" alt="" />
+                                        <img className="img-fluid rounded-circle" src="https://www.hakaimagazine.com/wp-content/uploads/header-gulf-birds.jpg" alt="" />
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
@@ -187,7 +194,7 @@ function TemplateOne() {
                             <div className="row align-items-center">
                                 <div className="col-lg-6 order-lg-2">
                                     <div className="p-5">
-                                        <img className="img-fluid rounded-circle" src="img/03.jpg" alt="" />
+                                        <img className="img-fluid rounded-circle" src="http://justbirding.com/wp-content/uploads/2018/11/most-colorful-birds-on-the-planet.jpg" alt="" />
                                     </div>
                                 </div>
                                 <div className="col-lg-6 order-lg-1">

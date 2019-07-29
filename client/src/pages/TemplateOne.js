@@ -15,7 +15,10 @@ function download(
 ) {
     var fileContent = "";
     fileContent += `<html lang="en">
+    <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    </head>
     <body>
 
         <div>
@@ -25,14 +28,12 @@ function download(
                     <div className="container">
                         <input type="text" placeholder="Welcome to my Website!" class="form-control form-control-lg">${form1value}</input>
                         <h2 className="masthead-subheading mb-0">${form2value}</h2>
-                        <a href="google.com" className="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
                     </div>
                 </div>
                 <div className="bg-circle-1 bg-circle"></div>
                 <div className="bg-circle-2 bg-circle"></div>
                 <div className="bg-circle-3 bg-circle"></div>
                 <div className="bg-circle-4 bg-circle"></div>
-                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             </header>
 
             <section>
@@ -115,6 +116,10 @@ function download(
 }
 
 function TemplateOne() {
+    // var inputStyle = {
+    //     background: transparent,
+    //     border: none
+    // }
     return (
         <html lang="en">
             <body>
@@ -185,9 +190,9 @@ function TemplateOne() {
                                 </div>
                                 <div className="col-lg-6 order-lg-1">
                                     <div className="p-5">
-                                    <form>
-                                        <input type="text" id="h7Input" placeholder="Let there Be Rock" className="display-4"></input>
-                                        <input type="text" id="h8Input" placeholder="Lorem iinputsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."></input>
+                                        <form>
+                                            <input type="text" id="h7Input" placeholder="Let there Be Rock" className="display-4"></input>
+                                            <input type="text" id="h8Input" placeholder="Lorem iinputsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."></input>
                                         </form>
                                     </div>
                                 </div>
@@ -209,15 +214,15 @@ function TemplateOne() {
                                     var formInput7 = document.getElementById("h7Input").value;
                                     var formInput8 = document.getElementById("h8Input").value;
                                     download("index.html",
-                                     formInput1, 
-                                     formInput2,
-                                     formInput3,
-                                     formInput4,
-                                     formInput5,
-                                     formInput6,
-                                     formInput7,
-                                     formInput8
-                                     )
+                                        formInput1,
+                                        formInput2,
+                                        formInput3,
+                                        formInput4,
+                                        formInput5,
+                                        formInput6,
+                                        formInput7,
+                                        formInput8
+                                    )
                                 }}>download</button>
                             </div>
                             <div className="col-lg-5"></div>

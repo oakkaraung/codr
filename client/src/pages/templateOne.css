@@ -1,0 +1,16 @@
+.display-4 {
+    background: transparent !important;
+    border: 0px !important;
+}
+
+.bodyText {
+    background: transparent !important;
+    border: 0px !important;
+    width: 500px;
+    height: 300px;
+}
+
+.tagline {
+    background: transparent !important;
+    border: 0px !important;
+}

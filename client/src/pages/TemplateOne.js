@@ -1,4 +1,5 @@
 import React from 'react';
+import './templateOne.css'
 
 /* THIS IS OUR FIRST TEMPLATE PAGE */
 
@@ -118,10 +119,7 @@ function download(
 }
 
 function TemplateOne() {
-    // var inputStyle = {
-    //     background: transparent,
-    //     border: none
-    // }
+  
     return (
         <html lang="en">
             <body>
@@ -131,7 +129,7 @@ function TemplateOne() {
                             <div className="container">
                                 <input type="text" id="h1Input" placeholder="Welcome to my Website!" className="form-control form-control-lg" />
                                 <form>
-                                    <input type="text" id="h2Input" placeholder="For those About to Rock" className="masthead-subheading mb-0"></input>
+                                    <input type="text" id="h2Input" placeholder="For those About to Rock" className="masthead-subheading mb-0 tagline"></input>
                                 </form>
                                 <a href="google.com" className="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
                             </div>
@@ -154,7 +152,7 @@ function TemplateOne() {
                                     <div className="p-5">
                                         <form>
                                             <input type="text" id="h3Input" placeholder="For those about to rock..." className="display-4"></input>
-                                            <input type="text" id="h4Input" placeholder="Lorem iinputsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."></input>
+                                            <input type="text" align="top" id="h4Input" className="bodyText" placeholder="Lorem iinputsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."></input>
                                         </form>
                                     </div>
                                 </div>
@@ -174,7 +172,7 @@ function TemplateOne() {
                                     <div className="p-5">
                                         <form>
                                             <input type="text" id="h5Input" placeholder="We Salute You" className="display-4"></input>
-                                            <input type="text" id="h6Input" placeholder="Lorem iinputsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."></input>
+                                            <input type="text" id="h6Input" className="bodyText" placeholder="Lorem iinputsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."></input>
                                         </form>
                                     </div>
                                 </div>
@@ -194,7 +192,7 @@ function TemplateOne() {
                                     <div className="p-5">
                                         <form>
                                             <input type="text" id="h7Input" placeholder="Let there Be Rock" className="display-4"></input>
-                                            <input type="text" id="h8Input" placeholder="Lorem iinputsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."></input>
+                                            <input type="text" id="h8Input" className="bodyText" placeholder="Lorem iinputsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."></input>
                                         </form>
                                     </div>
                                 </div>

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-node_modules
-=======
 # Logs
 logs
 *.log
@@ -68,4 +65,3 @@ typings/
 
 # Webstorm
 .idea/
->>>>>>> 19162335a2ea55043fcb3d006b26735d2aca73c6

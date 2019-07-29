@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import withAuth from './../components/withAuth';
 import API from './../utils/API';
-import { Col, Row, Container } from "../components/Grid";
 import { Link } from 'react-router-dom';
 // import About from '../components/About';
 import Jumbotron from "../components/Jumbotron/Jumbotron";

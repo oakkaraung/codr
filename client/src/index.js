@@ -13,6 +13,7 @@ import Signup from './pages/Signup';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import TemplateOne from './pages/TemplateOne';
+import ThankU from './pages/ThankU';
 
 // Here is if we have an id_token in localStorage
 if(localStorage.getItem("id_token")) {
@@ -29,6 +30,7 @@ ReactDOM.render(
             <Route exact path="/signup" component={Signup} />
             <Route exact path="/profile" component={Profile} />
             <Route exact path="/templateone" component={TemplateOne} />
+            <Route exact path="/thankyou" component={ThankU} />
         </div>
     </Router>
     , document.getElementById('root')

@@ -23,30 +23,32 @@ function download(
 
         <div>
 
-            <header className="masthead text-center text-black">
-                <div className="masthead-content">
-                    <div className="container">
-                        <input type="text" placeholder="Welcome to my Website!" class="form-control form-control-lg">${form1value}</input>
-                        <h2 className="masthead-subheading mb-0">${form2value}</h2>
+            <header class="masthead text-center text-black">
+                <div class="masthead-content">
+                    <div class="container">
+                        <h1 type="text" placeholder="Welcome to my Website!" class="form-control form-control-lg">${form1value}</h1>
+                        <h2 class="masthead-subheading mb-0">${form2value}</h2>
+                        <a href="google.com" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
                     </div>
                 </div>
-                <div className="bg-circle-1 bg-circle"></div>
-                <div className="bg-circle-2 bg-circle"></div>
-                <div className="bg-circle-3 bg-circle"></div>
-                <div className="bg-circle-4 bg-circle"></div>
+                <div class="bg-circle-1 bg-circle"></div>
+                <div class="bg-circle-2 bg-circle"></div>
+                <div class="bg-circle-3 bg-circle"></div>
+                <div class="bg-circle-4 bg-circle"></div>
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             </header>
 
             <section>
-                <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-lg-6 order-lg-2">
-                            <div className="p-5">
-                                <img className="img-fluid rounded-circle" src="img/01.jpg" alt="" />
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-2">
+                            <div class="p-5">
+                                <img class="img-fluid rounded-circle" src="img/01.jpg" alt="" />
                             </div>
                         </div>
-                        <div className="col-lg-6 order-lg-1">
-                            <div className="p-5">
-                                <h2 className="display-4">${form3value}</h2>
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="p-5">
+                                <h2 class="display-4">${form3value}</h2>
                                 <p>${form4value}</p>
                             </div>
                         </div>
@@ -55,16 +57,16 @@ function download(
             </section>
 
             <section>
-                <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-lg-6">
-                            <div className="p-5">
-                                <img className="img-fluid rounded-circle" src="img/02.jpg" alt="" />
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="p-5">
+                                <img class="img-fluid rounded-circle" src="img/02.jpg" alt="" />
                             </div>
                         </div>
-                        <div className="col-lg-6">
-                            <div className="p-5">
-                                <h2 className="display-4">${form5value}</h2>
+                        <div class="col-lg-6">
+                            <div class="p-5">
+                                <h2 class="display-4">${form5value}</h2>
                                 <p>${form6value}</p>
                             </div>
                         </div>
@@ -73,16 +75,16 @@ function download(
             </section>
 
             <section>
-                <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-lg-6 order-lg-2">
-                            <div className="p-5">
-                                <img className="img-fluid rounded-circle" src="img/03.jpg" alt="" />
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-2">
+                            <div class="p-5">
+                                <img class="img-fluid rounded-circle" src="img/03.jpg" alt="" />
                             </div>
                         </div>
-                        <div className="col-lg-6 order-lg-1">
-                            <div className="p-5">
-                                <h2 className="display-4">${form7value}</h2>
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="p-5">
+                                <h2 class="display-4">${form7value}</h2>
                                 <p>${form8value}</p>
                             </div>
                         </div>
@@ -90,9 +92,9 @@ function download(
                 </div>
             </section>
 
-            <footer className="py-5 bg-black">
-                <div className="container">
-                    <p className="m-0 text-center text-white small">Copyright &copy; Your Website 2019</p>
+            <footer class="py-5 bg-black">
+                <div class="container">
+                    <p class="m-0 text-center text-white small">Copyright &copy; Your Website 2019</p>
                 </div>
 
             </footer>

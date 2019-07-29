@@ -1,13 +1,21 @@
 import React from 'react';
+import logo from '../pages/codr-logo.png'
+import Jumbotron from "../components/Jumbotron/Jumbotron"
+import About from "../components/About/About"
 
- /* Add in Logo here and slides down to about section. */
+/* Add in Logo here and slides down to about section. */
 
-function Home(){
-    return <div>
-        <h1>
-            <a href="./login">LOGIN</a>
-        </h1>
-    </div>
+function Home() {
+    return (
+        <div>
+       <Jumbotron>
+           <img src={logo} alt="CodrLogo" width="440px" height="400px"/><br></br><br></br><br></br>
+           <button type="button" class="btn btn-primary">About</button>
+        </Jumbotron>
+        <About />
+        </div>
+
+    )
 }
 
 

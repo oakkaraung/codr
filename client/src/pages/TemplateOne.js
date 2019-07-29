@@ -31,7 +31,7 @@ function download(
                 <header class="masthead text-center text-black">
                     <div class="masthead-content">
                         <div class="container">
-                            <h1 type="text" placeholder="Welcome to my Website!" class="form-control form-control-lg">${form1value}</h1>
+                            <h1 class="display-4" type="text" placeholder="Welcome to my Website!" >${form1value}</h1>
                             <h2 class="masthead-subheading mb-0">${form2value}</h2>
                             <a href="google.com" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
                         </div>
@@ -129,27 +129,16 @@ function TemplateOne() {
         <html lang="en">
             <body>
                 <div>
-<<<<<<< HEAD
-                    <div className="jumbotron currentTheme">
+                    <div className="jumbotron webTheme">
                         <header className="masthead text-center text-black">
                             <div className="masthead-content">
                                 <div className="container">
-                                    <input type="text" id="h1Input" placeholder="Welcome to my Website!" className="form-control form-control-lg" />
+                                    <input type="text" id="h1Input" placeholder="Welcome to my Website!" className="display-4"/>
                                     <form>
                                         <input type="text" id="h2Input" placeholder="For those About to Rock" className="masthead-subheading mb-0"></input>
                                     </form>
                                     <a href="google.com" className="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
                                 </div>
-=======
-                    <header className="masthead text-center text-black">
-                        <div className="masthead-content">
-                            <div className="container">
-                                <input type="text" id="h1Input" placeholder="Welcome to my Website!" className="form-control form-control-lg" />
-                                <form>
-                                    <input type="text" id="h2Input" placeholder="For those About to Rock" className="masthead-subheading mb-0 tagline"></input>
-                                </form>
-                                <a href="google.com" className="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
->>>>>>> ac9267a30fb33544793baeabb0978c8ee2721c2c
                             </div>
                             <div className="bg-circle-1 bg-circle"></div>
                             <div className="bg-circle-2 bg-circle"></div>

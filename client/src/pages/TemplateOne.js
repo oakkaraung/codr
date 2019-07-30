@@ -37,7 +37,7 @@ function download(
                         <div class="container">
                             <h1 class="display-4" type="text" placeholder="Welcome to my Website!" >${form1value}</h1>
                             <h2 class="masthead-subheading mb-0">${form2value}</h2>
-                            <a href="google.com" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
+                            <a href="#" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
                         </div>
                     </div>
                     <div class="bg-circle-1 bg-circle"></div>
@@ -106,7 +106,6 @@ function download(
                 <div class="container">
                     <p class="m-0 text-center text-black small">${form9value}</p>
                 </div>
-
             </footer>
         </div>
         <script src="vendor/jquery/jquery.min.js"></script>

@@ -10,7 +10,7 @@ function Home() {
         <div>
        <Jumbotron >
            <img src={logo} alt="CodrLogo" width="440px" height="400px"/><br></br><br></br><br></br>
-           <button type="button" class="btn btn-primary">About</button>
+           <button type="button" className="btn btn-primary">About</button>
         </Jumbotron>
         <About />
         </div>

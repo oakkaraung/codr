@@ -19,8 +19,22 @@
     background-color: #f55d42 !important
 }
 
+.footercss {
+    background: transparent !important;
+    border: 0px !important;
+}
+
 .toptext {
     background: transparent !important;
     border: 0px !important;
     font-size: 20px
+}
+
+.jumbotron {
+    border-radius: 0 !important;
+}
+
+.footercolor {
+    background-color: #808080;
+    width: 100%;
 }

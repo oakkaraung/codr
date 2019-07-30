@@ -125,7 +125,7 @@ function download(
 }
 
 function TemplateOne() {
-  
+
     return (
         <html lang="en">
             <body>
@@ -134,11 +134,15 @@ function TemplateOne() {
                         <header className="masthead text-center text-black">
                             <div className="masthead-content">
                                 <div className="container">
-                                    <input type="text" id="h1Input" placeholder="Welcome to my Website!" className="display-4"/>
-                                    <form>
-                                        <input type="text" id="h2Input" placeholder="For those About to Rock" className="masthead-subheading mb-0 toptext"></input>
-                                    </form>
-                                    <a href="google.com" className="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
+                                    <div className="row">
+                                        <div className="col-lg-6 mx-auto">
+                                            <input type="text" id="h1Input" placeholder="Welcome to my Website!" className="display-4" />
+                                            <form>
+                                                <input type="text" id="h2Input" placeholder="For those About to Rock" className="masthead-subheading mb-0 toptext"></input>
+                                            </form>
+                                            <a href="google.com" className="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div className="bg-circle-1 bg-circle"></div>
@@ -208,17 +212,22 @@ function TemplateOne() {
                         </div>
                     </section>
 
-                    <footer className="py-5 bg-black text-center">
-                        <div className="container">
-                            <input type="text" id="h9Input" className="m-0 text-center text-black small footercss" placeholder="Copyright &copy; Your Website 2019"></input>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-6 mx-auto">
+                                <footer className="py-5 bg-black text-center">
+                                    <div className="container">
+                                        <input type="text" id="h9Input" className="m-0 text-center text-black small footercss" placeholder="Copyright &copy; Your Website 2019"></input>
+                                    </div>
+                                </footer>
+                            </div>
                         </div>
-
-                    </footer>
+                    </div>
 
                     <section>
                         <div className="row">
-                            <div className="col-lg-6"></div>
-                            <div className="col-lg-1">
+                            
+                            <div className="col-lg-1 mx-auto">
                                 <button className="btn btn-primary" onClick={() => {
                                     var formInput1 = document.getElementById("h1Input").value;
                                     var formInput2 = document.getElementById("h2Input").value;
@@ -243,19 +252,10 @@ function TemplateOne() {
                                     )
                                 }}>download</button>
                             </div>
-                            <div className="col-lg-5"></div>
+                            
                         </div>
                     </section>
-<<<<<<< HEAD
-=======
 
-                    <footer className="py-5 bg-black">
-                        <div className="container">
-                            <textarea className="m-0 text-center text-black small" placeholder="Copyright &copy; Your Website 2019"></textarea>
-                        </div>
-
-                    </footer>
->>>>>>> 0a583ee46e879267aebe33dbc56e8a10cf1b4bd2
                 </div>
                 <script src="vendor/jquery/jquery.min.js"></script>
                 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

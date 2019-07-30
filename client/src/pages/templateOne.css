@@ -1,0 +1,32 @@
+.display-4 {
+    background: transparent !important;
+    border: 0px !important;
+}
+
+.bodyText {
+    background: transparent !important;
+    border: 0px !important;
+    width: 500px;
+    height: 300px;
+}
+
+.tagline {
+    background: transparent !important;
+    border: 0px !important;
+}
+
+.webTheme {
+    background-color: #f55d42 !important
+}
+
+<<<<<<< HEAD
+.footercss {
+    background: transparent !important;
+    border: 0px !important;
+=======
+.toptext {
+    background: transparent !important;
+    border: 0px !important;
+    font-size: 20px
+>>>>>>> 0a583ee46e879267aebe33dbc56e8a10cf1b4bd2
+}

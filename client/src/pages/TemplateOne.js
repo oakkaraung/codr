@@ -246,16 +246,6 @@ function TemplateOne() {
                             <div className="col-lg-5"></div>
                         </div>
                     </section>
-<<<<<<< HEAD
-=======
-
-                    <footer className="py-5 bg-black">
-                        <div className="container">
-                            <textarea className="m-0 text-center text-black small" placeholder="Copyright &copy; Your Website 2019"></textarea>
-                        </div>
-
-                    </footer>
->>>>>>> 0a583ee46e879267aebe33dbc56e8a10cf1b4bd2
                 </div>
                 <script src="vendor/jquery/jquery.min.js"></script>
                 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -23,6 +23,9 @@ function download(
         .currentTheme {
             background-color: #f55d42 !important;
         }
+        .jumbotron {
+            border-radius: 0 !important;
+        }
     </style>
     </head>
     <body>
@@ -125,144 +128,124 @@ function download(
 }
 
 function TemplateOne() {
-  
+
     return (
-        <html lang="en">
-            <body>
-                <div>
-                    <div className="jumbotron webTheme">
-                        <header className="masthead text-center text-black">
-                            <div className="masthead-content">
-                                <div className="container">
-                                    <input type="text" id="h1Input" placeholder="Welcome to my Website!" className="display-4"/>
-                                    <form>
-                                        <input type="text" id="h2Input" placeholder="For those About to Rock" className="masthead-subheading mb-0 toptext"></input>
-                                    </form>
-                                    <a href="google.com" className="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
-                                </div>
-                            </div>
-                            <div className="bg-circle-1 bg-circle"></div>
-                            <div className="bg-circle-2 bg-circle"></div>
-                            <div className="bg-circle-3 bg-circle"></div>
-                            <div className="bg-circle-4 bg-circle"></div>
-                        </header>
+        <div>
+            <div className="jumbotron webTheme">
+                <header className="masthead text-center text-black">
+                    <div className="masthead-content">
+                        <div className="container">
+                            <input type="text" id="h1Input" placeholder="Welcome to my Website!" className="display-4" />
+                            <form>
+                                <input type="text" id="h2Input" placeholder="For those About to Rock" className="masthead-subheading mb-0 toptext"></input>
+                            </form>
+                            <a href="google.com" className="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
+                        </div>
                     </div>
+                    <div className="bg-circle-1 bg-circle"></div>
+                    <div className="bg-circle-2 bg-circle"></div>
+                    <div className="bg-circle-3 bg-circle"></div>
+                    <div className="bg-circle-4 bg-circle"></div>
+                </header>
+            </div>
 
-                    <section>
-                        <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col-lg-6 order-lg-2">
-                                    <div className="p-5">
-                                        <img className="img-fluid rounded-circle" src="https://thumbs-prod.si-cdn.com/yxYtidKUcbMprBCzkC3AH2cnUQ4=/420x240/https://public-media.si-cdn.com/filer/54/10/5410da58-2295-4e3a-a847-fecd41cdcdd9/scarlet_tanager.jpg" alt="" />
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 order-lg-1">
-                                    <div className="p-5">
-                                        <form>
-                                            <input type="text" id="h3Input" placeholder="For those about to rock..." className="display-4"></input>
-                                            <textarea type="text" align="top" id="h4Input" className="bodyText" placeholder="Lorem iinputsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."></textarea>
-                                        </form>
-                                    </div>
-                                </div>
+            <section>
+                <div className="container">
+                    <div className="row align-items-center">
+                        <div className="col-lg-6 order-lg-2">
+                            <div className="p-5">
+                                <img className="img-fluid rounded-circle" src="https://thumbs-prod.si-cdn.com/yxYtidKUcbMprBCzkC3AH2cnUQ4=/420x240/https://public-media.si-cdn.com/filer/54/10/5410da58-2295-4e3a-a847-fecd41cdcdd9/scarlet_tanager.jpg" alt="" />
                             </div>
                         </div>
-                    </section>
-
-                    <section>
-                        <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col-lg-6">
-                                    <div className="p-5">
-                                        <img className="img-fluid rounded-circle" src="https://www.hakaimagazine.com/wp-content/uploads/header-gulf-birds.jpg" alt="" />
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="p-5">
-                                        <form>
-                                            <input type="text" id="h5Input" placeholder="We Salute You" className="display-4"></input>
-                                            <textarea type="text" id="h6Input" className="bodyText" placeholder="Lorem iinputsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."></textarea>
-                                        </form>
-                                    </div>
-                                </div>
+                        <div className="col-lg-6 order-lg-1">
+                            <div className="p-5">
+                                <form>
+                                    <input type="text" id="h3Input" placeholder="For those about to rock..." className="display-4"></input>
+                                    <textarea type="text" align="top" id="h4Input" className="bodyText" placeholder="Lorem iinputsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."></textarea>
+                                </form>
                             </div>
                         </div>
-                    </section>
-
-                    <section>
-                        <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col-lg-6 order-lg-2">
-                                    <div className="p-5">
-                                        <img className="img-fluid rounded-circle" src="http://justbirding.com/wp-content/uploads/2018/11/most-colorful-birds-on-the-planet.jpg" alt="" />
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 order-lg-1">
-                                    <div className="p-5">
-                                        <form>
-                                            <input type="text" id="h7Input" placeholder="Let there Be Rock" className="display-4"></input>
-                                            <textarea type="text" id="h8Input" className="bodyText" placeholder="Lorem iinputsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."></textarea>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <footer className="py-5 bg-black text-center">
-                        <div className="container">
-                            <input type="text" id="h9Input" className="m-0 text-center text-black small footercss" placeholder="Copyright &copy; Your Website 2019"></input>
-                        </div>
-
-                    </footer>
-
-                    <section>
-                        <div className="row">
-                            <div className="col-lg-6"></div>
-                            <div className="col-lg-1">
-                                <button className="btn btn-primary" onClick={() => {
-                                    var formInput1 = document.getElementById("h1Input").value;
-                                    var formInput2 = document.getElementById("h2Input").value;
-                                    var formInput3 = document.getElementById("h3Input").value;
-                                    var formInput4 = document.getElementById("h4Input").value;
-                                    var formInput5 = document.getElementById("h5Input").value;
-                                    var formInput6 = document.getElementById("h6Input").value;
-                                    var formInput7 = document.getElementById("h7Input").value;
-                                    var formInput8 = document.getElementById("h8Input").value;
-                                    var formInput9 = document.getElementById("h9Input").value;
-
-                                    download("index.html",
-                                        formInput1,
-                                        formInput2,
-                                        formInput3,
-                                        formInput4,
-                                        formInput5,
-                                        formInput6,
-                                        formInput7,
-                                        formInput8,
-                                        formInput9
-                                    )
-                                }}>download</button>
-                            </div>
-                            <div className="col-lg-5"></div>
-                        </div>
-                    </section>
-<<<<<<< HEAD
-=======
-
-                    <footer className="py-5 bg-black">
-                        <div className="container">
-                            <textarea className="m-0 text-center text-black small" placeholder="Copyright &copy; Your Website 2019"></textarea>
-                        </div>
-
-                    </footer>
->>>>>>> 0a583ee46e879267aebe33dbc56e8a10cf1b4bd2
+                    </div>
                 </div>
-                <script src="vendor/jquery/jquery.min.js"></script>
-                <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            </section>
 
-            </body>
+            <section>
+                <div className="container">
+                    <div className="row align-items-center">
+                        <div className="col-lg-6">
+                            <div className="p-5">
+                                <img className="img-fluid rounded-circle" src="https://www.hakaimagazine.com/wp-content/uploads/header-gulf-birds.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div className="col-lg-6">
+                            <div className="p-5">
+                                <form>
+                                    <input type="text" id="h5Input" placeholder="We Salute You" className="display-4"></input>
+                                    <textarea type="text" id="h6Input" className="bodyText" placeholder="Lorem iinputsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."></textarea>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        </html>
+            <section>
+                <div className="container">
+                    <div className="row align-items-center">
+                        <div className="col-lg-6 order-lg-2">
+                            <div className="p-5">
+                                <img className="img-fluid rounded-circle" src="http://justbirding.com/wp-content/uploads/2018/11/most-colorful-birds-on-the-planet.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div className="col-lg-6 order-lg-1">
+                            <div className="p-5">
+                                <form>
+                                    <input type="text" id="h7Input" placeholder="Let there Be Rock" className="display-4"></input>
+                                    <textarea type="text" id="h8Input" className="bodyText" placeholder="Lorem iinputsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."></textarea>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer className="py-5 bg-black text-center">
+                <div className="container">
+                    <input type="text" id="h9Input" className="m-0 text-center text-black small footercss" placeholder="Copyright &copy; Your Website 2019"></input>
+                </div>
+
+            </footer>
+
+            <section>
+                <div className="row">
+                    <div className="col-lg-1 mx-auto">
+                        <button className="btn btn-primary" onClick={() => {
+                            var formInput1 = document.getElementById("h1Input").value;
+                            var formInput2 = document.getElementById("h2Input").value;
+                            var formInput3 = document.getElementById("h3Input").value;
+                            var formInput4 = document.getElementById("h4Input").value;
+                            var formInput5 = document.getElementById("h5Input").value;
+                            var formInput6 = document.getElementById("h6Input").value;
+                            var formInput7 = document.getElementById("h7Input").value;
+                            var formInput8 = document.getElementById("h8Input").value;
+                            var formInput9 = document.getElementById("h9Input").value;
+
+                            download("index.html",
+                                formInput1,
+                                formInput2,
+                                formInput3,
+                                formInput4,
+                                formInput5,
+                                formInput6,
+                                formInput7,
+                                formInput8,
+                                formInput9
+                            )
+                        }}>download</button>
+                    </div>
+                </div>
+            </section>
+        </div>
     )
 
 }

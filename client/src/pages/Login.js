@@ -37,7 +37,8 @@ class Login extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container"
+      style={{ backgroundColor: "lightblue", height: 640, clear: "both", padding: 100}}>
         <h1>Login</h1>
         <form onSubmit={this.handleFormSubmit}>
           <div className="form-group">

@@ -34,7 +34,7 @@ function download(
                         <div class="container">
                             <h1 class="display-4" type="text" placeholder="Welcome to my Website!" >${form1value}</h1>
                             <h2 class="masthead-subheading mb-0">${form2value}</h2>
-                            <a href="google.com" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
+                            <a href="#" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
                         </div>
                     </div>
                     <div class="bg-circle-1 bg-circle"></div>
@@ -103,7 +103,6 @@ function download(
                 <div class="container">
                     <p class="m-0 text-center text-black small">${form9value}</p>
                 </div>
-
             </footer>
         </div>
         <script src="vendor/jquery/jquery.min.js"></script>
@@ -138,7 +137,7 @@ function TemplateOne() {
                                     <form>
                                         <input type="text" id="h2Input" placeholder="For those About to Rock" className="masthead-subheading mb-0 toptext"></input>
                                     </form>
-                                    <a href="google.com" className="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
+                                    <a href="learn" className="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
                                 </div>
                             </div>
                             <div className="bg-circle-1 bg-circle"></div>
@@ -217,8 +216,7 @@ function TemplateOne() {
 
                     <section>
                         <div className="row">
-                            <div className="col-lg-6"></div>
-                            <div className="col-lg-1">
+                            <div className="mx-auto">
                                 <button className="btn btn-primary" onClick={() => {
                                     var formInput1 = document.getElementById("h1Input").value;
                                     var formInput2 = document.getElementById("h2Input").value;
@@ -242,20 +240,12 @@ function TemplateOne() {
                                         formInput9
                                     )
                                 }}>download</button>
+
                             </div>
-                            <div className="col-lg-5"></div>
                         </div>
                     </section>
-<<<<<<< HEAD
-=======
+                    <br />
 
-                    <footer className="py-5 bg-black">
-                        <div className="container">
-                            <textarea className="m-0 text-center text-black small" placeholder="Copyright &copy; Your Website 2019"></textarea>
-                        </div>
-
-                    </footer>
->>>>>>> 0a583ee46e879267aebe33dbc56e8a10cf1b4bd2
                 </div>
                 <script src="vendor/jquery/jquery.min.js"></script>
                 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

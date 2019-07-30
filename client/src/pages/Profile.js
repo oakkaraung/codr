@@ -34,9 +34,8 @@ class Profile extends Component {
         <div className="container Profile">
           <h1>Choose a Template {this.state.username}!</h1>
         </div>
-        
+        <Card />
       </Jumbotron>
-      <Card />
       <Footer>
         <Link to="/">Go home</Link>
       </Footer>

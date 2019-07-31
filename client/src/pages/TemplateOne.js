@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom';
 import React from 'react';
 import './templateOne.css'
 
@@ -219,6 +220,7 @@ function TemplateOne() {
             <section>
                 <div className="row">
                     <div className="col-lg-1 mx-auto">
+                    <Link to="/thankyou">
                         <button className="btn btn-primary" onClick={() => {
                             var formInput1 = document.getElementById("h1Input").value;
                             var formInput2 = document.getElementById("h2Input").value;
@@ -242,6 +244,7 @@ function TemplateOne() {
                                 formInput9
                             )
                         }}>download</button>
+                        </Link>
                     </div>
                 </div>
             </section>

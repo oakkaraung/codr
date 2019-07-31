@@ -134,11 +134,12 @@ function TemplateOne() {
                 <header className="masthead text-center text-black">
                     <div className="masthead-content">
                         <div className="container">
-                            <input type="text" id="h1Input" placeholder="Welcome to my Website!" className="display-4 text-center" />
+                            <br /><br /><br /><br /><br />
+                            <input type="text" id="h1Input" placeholder="Welcome to my Website!" className="display-3 text-center" />
+                            <br /><br /><br />
                             <form>
                                 <input type="text" id="h2Input" placeholder="For those About to Rock" className="masthead-subheading mb-0 toptext"></input>
                             </form>
-                            <a href="#" className="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
                         </div>
                     </div>
                     <div className="bg-circle-1 bg-circle"></div>

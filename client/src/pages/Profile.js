@@ -30,12 +30,15 @@ class Profile extends Component {
   render() {
     return (<div>
       <Jumbotron>
-        <h1>Welcome to Codr!</h1>
+        <br /><br />
+        <h1 style={{color:"white"}}>Welcome to Codr</h1>
         <div className="container Profile">
-          <h1>Choose a Template {this.state.username}!</h1>
+          <h1 style={{color:"white"}}>Choose a Template <b style={{color:"lightblue"}}>{this.state.username}</b>!</h1>
         </div>
-        <Card />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <button type="button" className="btn btn-primary">View Templates</button>
       </Jumbotron>
+      <Card />
       <Footer>
         <Link to="/">Go home</Link>
       </Footer>

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 import registerServiceWorker from './registerServiceWorker';
-import { Route, BrowserRouter as Router } from 'react-router-dom';
+import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import axios from "axios";
 
 // Our Components
@@ -24,13 +24,15 @@ if(localStorage.getItem("id_token")) {
 ReactDOM.render(
     <Router>
         <div>
-            <Navbar />
+            <Route path="*" component={Navbar} />
+            <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/signup" component={Signup} />
             <Route exact path="/profile" component={Profile} />
             <Route exact path="/templateone" component={TemplateOne} />
             <Route exact path="/thankyou" component={ThankU} />
+            </Switch>
         </div>
     </Router>
     , document.getElementById('root')

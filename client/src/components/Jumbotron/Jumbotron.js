@@ -3,7 +3,7 @@ import Background from '../../pages/images/darkComp.jpg';
 
 var sectionStyle = {
   width: "100%",
-  height: "100%",
+  height: "100vh",
   backgroundImage: `url(${Background})`,
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',

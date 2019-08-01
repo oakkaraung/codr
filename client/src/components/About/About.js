@@ -36,11 +36,7 @@ function About() {
               <h2 className="display-4">About Codr!</h2>
               <p>This website is the final project of a team of four going through a three month web development program. After about two weeks of development, what you currently see is the outcome.</p>
             </div>
-            <ScrollTo>
-              {({ scrollTo }) => (
-                <button className="btn btn-info animateButton" onClick={() => scrollTo({ x: 20, y: 1375, smooth: true })}>Meet the Developers</button>
-              )}
-            </ScrollTo>
+            
           </div>
         </div>
       </div>
@@ -56,11 +52,7 @@ function About() {
               <h2 className="display-4">Oakkar Aung</h2>
               <p>Oakkar is a current second year data science student studying at the University of California San Diego. He has had prior computer science experience through his high school's AP Computer Science program and wishes to tranfer to a joint Mathematics Computer Science major. His goal is to be the most versatile coder as he can be.</p>
             </div>
-            <ScrollTo>
-              {({ scrollTo }) => (
-                <button className="btn btn-info animateButton" onClick={() => scrollTo({ x: 20, y: 2100, smooth: true })}>More</button>
-              )}
-            </ScrollTo>
+            
           </div>
         </div>
       </div>
@@ -76,11 +68,7 @@ function About() {
               <h2 className="display-4" style={whiteText}>Michael Barachkov</h2>
               <p style={whiteText}>Michael is currently a web development student in the University of California San Diego's Full Stack Coding Bootcamp. For the past decade, he have been doing freelance graphic art and working on sportfishing boats until a recent decision to change career paths. He hope to absorb as much knowledge as he can and grow as a developer each day.</p>
             </div>
-            <ScrollTo>
-              {({ scrollTo }) => (
-                <button className="btn btn-info animateButton" onClick={() => scrollTo({ x: 20, y: 2900, smooth: true })}>More</button>
-              )}
-            </ScrollTo>
+            
           </div>
         </div>
       </div>

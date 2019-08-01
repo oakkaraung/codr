@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import { ScrollTo } from "react-scroll-to";
+
 
 function Card() {
   return (
@@ -26,7 +28,11 @@ function Card() {
           <div className="card-body">
             <h5 className="card-title">Template three</h5>
             <p className="card-text">Change to template three.</p>
-            <Link to="/TemplateOne" className="btn btn-primary">Go to Template One</Link>
+            <ScrollTo>
+              {({ scrollTo }) => (
+                <Link to="/TemplateOne" onClick={() => scrollTo({ x: 20, y: 720, smooth: true })} className="btn btn-primary">Go to Template One</Link>)}
+            </ScrollTo>
+            {/* <Link to="/TemplateOne" onClick={() => scrollTo({ x: 20, y: 720, smooth: true })} className="btn btn-primary">Go to Template One</Link> */}
           </div>
         </div>
       </div>

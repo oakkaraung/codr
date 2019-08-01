@@ -74,7 +74,7 @@ class Navbar extends Component {
             );
         } else {
             return (
-                <ul className="navbar-nav">
+                <ul className="navbar-nav sticky-top">
                     <li className="nav-item">
                         <Link className="nav-link" to="/" id="PopoverLegacyOne">Signup</Link>
                         <UncontrolledPopover trigger="legacy" placement="bottom" target="PopoverLegacyOne">

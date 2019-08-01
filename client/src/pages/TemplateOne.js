@@ -139,7 +139,7 @@ function TemplateOne() {
                             <input type="text" id="h1Input" placeholder="Welcome to my Website!" className="display-3 text-center" />
                             <br /><br /><br />
                             <form>
-                                <input type="text" id="h2Input" placeholder="For those About to Rock" className="masthead-subheading mb-0 toptext"></input>
+                                <input type="text" id="h2Input" placeholder="Tweet Tweet Tweet" className="masthead-subheading mb-0 toptext text-center"></input>
                             </form>
                         </div>
                     </div>
@@ -161,7 +161,7 @@ function TemplateOne() {
                         <div className="col-lg-6 order-lg-1">
                             <div className="p-5">
                                 <form>
-                                    <input type="text" id="h3Input" placeholder="For those about to rock..." className="display-4"></input>
+                                    <input type="text" id="h3Input" placeholder="A Scarlet Tanger" className="display-4"></input>
                                     <textarea type="text" align="top" id="h4Input" className="bodyText" placeholder="Lorem iinputsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."></textarea>
                                 </form>
                             </div>
@@ -181,7 +181,7 @@ function TemplateOne() {
                         <div className="col-lg-6">
                             <div className="p-5">
                                 <form>
-                                    <input type="text" id="h5Input" placeholder="We Salute You" className="display-4"></input>
+                                    <input type="text" id="h5Input" placeholder="A Painted Bunting" className="display-4"></input>
                                     <textarea type="text" id="h6Input" className="bodyText" placeholder="Lorem iinputsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."></textarea>
                                 </form>
                             </div>
@@ -201,7 +201,7 @@ function TemplateOne() {
                         <div className="col-lg-6 order-lg-1">
                             <div className="p-5">
                                 <form>
-                                    <input type="text" id="h7Input" placeholder="Let there Be Rock" className="display-4"></input>
+                                    <input type="text" id="h7Input" placeholder="A Rainbow Lorikeet" className="display-4"></input>
                                     <textarea type="text" id="h8Input" className="bodyText" placeholder="Lorem iinputsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."></textarea>
                                 </form>
                             </div>

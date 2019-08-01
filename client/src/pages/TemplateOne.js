@@ -39,7 +39,10 @@ function download(
 
     <style>
         .currentTheme {
-            background-color: #f55d42 !important;
+            background-image: url("https://images.pexels.com/photos/2346344/pexels-photo-2346344.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+            background-size: 'cover';
+            background-size: 100% 800px;
+            height:680px;
         }
         .jumbotron {
             border-radius: 0 !important;
@@ -67,9 +70,10 @@ function download(
                 <header class="masthead text-center text-black">
                     <div class="masthead-content">
                         <div class="container">
+                        <br /><br /><br /><br /><br />
                             <h1 class="display-4" type="text" placeholder="Welcome to my Website!" >${form1value}</h1>
+                            <br /><br /><br />
                             <h2 class="masthead-subheading mb-0">${form2value}</h2>
-                            <a href="#" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
                         </div>
                     </div>
                     <div class="bg-circle-1 bg-circle"></div>
@@ -189,11 +193,12 @@ function TemplateOne() {
                 <header className="masthead text-center text-black">
                     <div className="masthead-content">
                         <div className="container">
-                            <input type="text" id="h1Input" placeholder="Welcome to my Website!" className="display-4 text-center" />
+                            <br /><br /><br /><br /><br />
+                            <input type="text" id="h1Input" placeholder="Welcome to my Website!" className="display-3 text-center" />
+                            <br /><br /><br />
                             <form>
-                                <input type="text" id="h2Input" placeholder="For those About to Rock" className="masthead-subheading mb-0 toptext"></input>
+                                <input type="text" id="h2Input" placeholder="Tweet Tweet Edit Text!" className="masthead-subheading mb-0 toptext text-center"></input>
                             </form>
-                            <a href="#" className="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
                         </div>
                     </div>
                     <div className="bg-circle-1 bg-circle"></div>
@@ -214,7 +219,7 @@ function TemplateOne() {
                         <div className="col-lg-6 order-lg-1">
                             <div className="p-5">
                                 <form>
-                                    <input type="text" id="h3Input" placeholder="For those about to rock..." className="display-4"></input>
+                                    <input type="text" id="h3Input" placeholder="A Scarlet Tanger" className="display-4"></input>
                                     <textarea type="text" align="top" id="h4Input" className="bodyText" placeholder="Lorem iinputsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."></textarea>
                                 </form>
                             </div>
@@ -234,7 +239,7 @@ function TemplateOne() {
                         <div className="col-lg-6">
                             <div className="p-5">
                                 <form>
-                                    <input type="text" id="h5Input" placeholder="We Salute You" className="display-4"></input>
+                                    <input type="text" id="h5Input" placeholder="A Painted Bunting" className="display-4"></input>
                                     <textarea type="text" id="h6Input" className="bodyText" placeholder="Lorem iinputsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."></textarea>
                                 </form>
                             </div>
@@ -254,7 +259,7 @@ function TemplateOne() {
                         <div className="col-lg-6 order-lg-1">
                             <div className="p-5">
                                 <form>
-                                    <input type="text" id="h7Input" placeholder="Let there Be Rock" className="display-4"></input>
+                                    <input type="text" id="h7Input" placeholder="A Rainbow Lorikeet" className="display-4"></input>
                                     <textarea type="text" id="h8Input" className="bodyText" placeholder="Lorem iinputsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."></textarea>
                                 </form>
                             </div>

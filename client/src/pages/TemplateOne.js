@@ -36,7 +36,9 @@ function download(
                 <header class="masthead text-center text-black">
                     <div class="masthead-content">
                         <div class="container">
+                        <br /><br /><br /><br /><br />
                             <h1 class="display-4" type="text" placeholder="Welcome to my Website!" >${form1value}</h1>
+                            <br /><br /><br />
                             <h2 class="masthead-subheading mb-0">${form2value}</h2>
                             <a href="#" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
                         </div>
@@ -139,7 +141,7 @@ function TemplateOne() {
                             <input type="text" id="h1Input" placeholder="Welcome to my Website!" className="display-3 text-center" />
                             <br /><br /><br />
                             <form>
-                                <input type="text" id="h2Input" placeholder="Tweet Tweet Tweet" className="masthead-subheading mb-0 toptext text-center"></input>
+                                <input type="text" id="h2Input" placeholder="Tweet Tweet Edit Text!" className="masthead-subheading mb-0 toptext text-center"></input>
                             </form>
                         </div>
                     </div>

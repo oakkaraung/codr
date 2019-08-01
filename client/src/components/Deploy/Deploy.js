@@ -7,14 +7,7 @@ function Deploy() {
 
             <div classNameName="container">
                 <div className="row align-items-center">
-                    <div className="col-md-12">
-                        <div className="p-5">
-                            <div className="embed-responsive embed-responsive-16by9">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/BS5QzThmrA4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-12">
+                    <div className="mx-auto">
                         <div className="p-5">
                             <h2 className="display-4">Steps To Deploy Your New Web Page!</h2><br></br><br></br>
 
@@ -25,6 +18,13 @@ function Deploy() {
                                 <li>Select the HTML file, open it and click the “Preview” button in the toolbar.</li>
                                 <li>Share the URL (it will look like www.googledrive.com/host/…) and anyone can view your web page!</li>
                             </ol>
+                        </div>
+                    </div>
+                    <div className="col-md-12">
+                        <div className="p-5">
+                            <div className="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" title="instructions" height="315" src="https://www.youtube.com/embed/BS5QzThmrA4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>

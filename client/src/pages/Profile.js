@@ -7,6 +7,11 @@ import { Link } from 'react-router-dom';
 import Jumbotron from "../components/Jumbotron/Jumbotron";
 import Card from '../components/Card';
 import Footer from '../components/Footer/Footer'
+import logo from '../pages/codrlogo-light.png'
+
+
+import { ScrollTo } from "react-scroll-to";
+
 //------------------------------------
 // THIS IS OUR TEMPLATE PAGE
 //------------------------------------
@@ -30,13 +35,18 @@ class Profile extends Component {
   render() {
     return (<div>
       <Jumbotron>
-        <br /><br />
-        <h1 style={{color:"white"}}>Welcome to Codr</h1>
+        <img src={logo} alt="CodrLogo" width="240px" height="200px" />
+        <br></br><br></br>
+        <h1 style={{ color: "white" }}>Welcome to Codr</h1>
         <div className="container Profile">
-          <h1 style={{color:"white"}}>Choose a Template <b style={{color:"lightblue"}}>{this.state.username}</b>!</h1>
+          <h1 style={{ color: "white" }}>Choose a Template <b style={{ color: "lightblue" }}>{this.state.username}</b>!</h1>
         </div>
-        <br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <button type="button" className="btn btn-primary">View Templates</button>
+        <br /><br /><br /><br /><br /><br></br>
+        <ScrollTo>
+          {({ scrollTo }) => (
+            <button className="btn btn-info animateButton" onClick={() => scrollTo({ x: 20, y: 740, smooth: true })}>Browse Templates</button>
+          )}
+        </ScrollTo>
       </Jumbotron>
       <Card />
       <Footer>

@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
-import { ScrollTo } from "react-scroll-to";
 
 
 class Card extends Component {

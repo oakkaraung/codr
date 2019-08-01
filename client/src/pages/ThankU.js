@@ -21,7 +21,7 @@ function ThankU() {
 
                 <ScrollTo>
                     {({ scrollTo }) => (
-                        <button onClick={() => scrollTo({ x: 20, y: 720, smooth: true })}>Learn How to Deploy</button>
+                        <button className="btn btn-info"onClick={() => scrollTo({ x: 20, y: 720, smooth: true })}>Learn How to Deploy</button>
                     )}
                 </ScrollTo>
             </Jumbotron>

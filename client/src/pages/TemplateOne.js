@@ -47,6 +47,12 @@ function download(
         .jumbotron {
             border-radius: 0 !important;
         }
+        .display-3 {
+            color:#fff;
+        }
+        #h2Header {
+            color:#fff;
+        }
     </style>
     </head>
 
@@ -71,9 +77,9 @@ function download(
                     <div class="masthead-content">
                         <div class="container">
                         <br /><br /><br /><br /><br />
-                            <h1 class="display-4" type="text" placeholder="Welcome to my Website!" >${form1value}</h1>
+                            <h1 class="display-3" type="text" placeholder="Welcome to my Website!" >${form1value}</h1>
                             <br /><br /><br />
-                            <h2 class="masthead-subheading mb-0">${form2value}</h2>
+                            <h2 id="h2Header"class="masthead-subheading mb-0">${form2value}</h2>
                         </div>
                     </div>
                     <div class="bg-circle-1 bg-circle"></div>

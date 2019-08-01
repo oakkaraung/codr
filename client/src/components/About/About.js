@@ -5,6 +5,9 @@ import trevor from "../../pages/profilePics/trevor.jpg";
 import oakkar from "../../pages/profilePics/oakkar.jpg";
 import soheil from "../../pages/profilePics/soheil.png";
 
+import { ScrollTo } from "react-scroll-to";
+
+
 var container1 = {
   background: '#6fc9be'
   // opacity: '0.5'
@@ -33,6 +36,11 @@ function About() {
               <h2 className="display-4">About Codr!</h2>
               <p>This website is the final project of a team of four going through a three month web development program. After about two weeks of development, what you currently see is the outcome.</p>
             </div>
+            <ScrollTo>
+              {({ scrollTo }) => (
+                <button className="btn btn-info animateButton" onClick={() => scrollTo({ x: 20, y: 1375, smooth: true })}>Meet the Developers</button>
+              )}
+            </ScrollTo>
           </div>
         </div>
       </div>
@@ -48,6 +56,11 @@ function About() {
               <h2 className="display-4">Oakkar Aung</h2>
               <p>Oakkar is a current second year data science student studying at the University of California San Diego. He has had prior computer science experience through his high school's AP Computer Science program and wishes to tranfer to a joint Mathematics Computer Science major. His goal is to be the most versatile coder as he can be.</p>
             </div>
+            <ScrollTo>
+              {({ scrollTo }) => (
+                <button className="btn btn-info animateButton" onClick={() => scrollTo({ x: 20, y: 2100, smooth: true })}>More</button>
+              )}
+            </ScrollTo>
           </div>
         </div>
       </div>
@@ -63,6 +76,11 @@ function About() {
               <h2 className="display-4" style={whiteText}>Michael Barachkov</h2>
               <p style={whiteText}>Michael is currently a web development student in the University of California San Diego's Full Stack Coding Bootcamp. For the past decade, he have been doing freelance graphic art and working on sportfishing boats until a recent decision to change career paths. He hope to absorb as much knowledge as he can and grow as a developer each day.</p>
             </div>
+            <ScrollTo>
+              {({ scrollTo }) => (
+                <button className="btn btn-info animateButton" onClick={() => scrollTo({ x: 20, y: 2900, smooth: true })}>More</button>
+              )}
+            </ScrollTo>
           </div>
         </div>
       </div>
@@ -93,6 +111,11 @@ function About() {
               <h2 className="display-4">Trevor Fairbank</h2>
               <p>Trevor can be described as a creative mind. He enjoys long walks on the beach, video games, and coding. But he is usually behind a computer or another black mirror so he doesn’t make it to the beach very often. He enjoys being close to a body of water.  Trevor grew up in Lake Tahoe and moved to San Diego to attend San Diego State University. After graduating, he worked for two years as a freelance photographer. From there, he began to learn how to code. He is currently looking for a job as a programmer.</p>
             </div>
+            <ScrollTo>
+              {({ scrollTo }) => (
+                <button className="btn btn-info animateButton" onClick={() => scrollTo({ x: 20, y: 0, smooth: true })}>Top</button>
+              )}
+            </ScrollTo>
           </div>
         </div>
       </div>

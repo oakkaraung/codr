@@ -2,6 +2,7 @@ import React from 'react';
 import Jumbotron from "../components/Jumbotron/Jumbotron"
 import Deploy from "../components/Deploy/Deploy"
 import logo from '../pages/codrlogo-light.png'
+import { ScrollTo } from "react-scroll-to";
 
 
 
@@ -18,7 +19,11 @@ function ThankU() {
                 <br></br><br></br><br></br>
 
 
-                <button type="button" className="btn btn-primary">Learn To Deploy</button>
+                <ScrollTo>
+                    {({ scrollTo }) => (
+                        <button onClick={() => scrollTo({ x: 20, y: 720, smooth: true })}>Learn How to Deploy</button>
+                    )}
+                </ScrollTo>
             </Jumbotron>
             <Deploy />
 

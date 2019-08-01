@@ -14,7 +14,7 @@ function Home() {
                 <img src={logo} alt="CodrLogo" width="450px" height="400px" /><br></br><br></br><br></br>
                 <ScrollTo>
                     {({ scrollTo }) => (
-                        <button onClick={() => scrollTo({ x: 20, y: 720, smooth: true })}>About Us</button>
+                        <button className="btn btn-info animateButton" onClick={() => scrollTo({ x: 20, y: 720, smooth: true })}>About Us</button>
                     )}
                 </ScrollTo>
                 {/* <button type="button" id="aboutScroll" className="btn btn-primary">About</button> */}

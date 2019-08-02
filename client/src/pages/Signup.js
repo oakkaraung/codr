@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import AuthService from './../components/AuthService';
 import API from './../utils/API';
+import Jumbotron from '../components/Jumbotron/Jumbotron';
 
 class Signup extends Component {
   constructor() {
@@ -33,43 +34,48 @@ class Signup extends Component {
     });
   };
 
+
   render() {
     return (
-      <div className="container"
-      style={{ backgroundColor: "lightblue", height: 640, clear: "both", padding: 100}}>
-        <h1>Signup</h1>
+      <Jumbotron>
+        <h1 style={{ color: "white" }}>Signup</h1>
         <form onSubmit={this.handleFormSubmit}>
           <div className="form-group">
-            <label htmlFor="username">Username:</label>
-            <input className="form-control"
+            <label htmlFor="username" style={{ color: "white" }}>Username:</label>
+            <input className="form-control mx-auto"
               placeholder="Username goes here..."
               name="username"
               type="text"
               id="username"
-              onChange={this.handleChange} />
+              onChange={this.handleChange} 
+              style={{ width: 500}}/>
           </div>
           <div className="form-group">
-            <label htmlFor="email">Email address:</label>
-            <input className="form-control"
+            <label htmlFor="email" style={{ color: "white" }}>Email address:</label>
+            <input className="form-control mx-auto"
               placeholder="Email goes here..."
               name="email"
               type="email"
               id="email"
-              onChange={this.handleChange} />
+              onChange={this.handleChange} 
+              style={{ width: 500}}/>
           </div>
           <div className="form-group">
-            <label htmlFor="pwd">Password:</label>
-            <input className="form-control"
+            <label htmlFor="pwd" style={{ color: "white" }}>Password:</label>
+            <input className="form-control mx-auto"
               placeholder="Password goes here..."
               name="password"
               type="password"
               id="pwd"
-              onChange={this.handleChange} />
+              onChange={this.handleChange} 
+              style={{ width: 500}}/>
           </div>
-          <button type="submit" className="btn btn-primary">Submit</button>
+          <br />
+          <button type="submit" className="btn btn-info">Submit</button>
         </form>
-        <p><Link to="/login">Go to Login</Link></p>
-      </div>
+        <br />
+        <p><Link to="/login" style={{ color: "white" }}>Go to Login</Link></p>
+      </Jumbotron>
     );
   }
 }

@@ -31,6 +31,12 @@ mongoose
   .catch(err => console.error(err));
 
 
+app.get('/api/user/count', (req, res) => {
+  db.User.countDocuments({}).then(data => {
+    return res.json({ count: data })
+  }).catch(err => res.status(400).send(err));
+});
+
 // LOGIN ROUTE
 app.post('/api/login', (req, res) => {
   auth
@@ -63,9 +69,9 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-app.get('/', isAuthenticated /* Using the express jwt MW here */, (req, res) => {
-  res.send('You are authenticated'); //Sending some response when authenticated
-});
+// app.get('/', isAuthenticated /* Using the express jwt MW here */, (req, res) => {
+//   res.send('You are authenticated'); //Sending some response when authenticated
+// });
 
 // Error handling
 app.use(function (err, req, res, next) {

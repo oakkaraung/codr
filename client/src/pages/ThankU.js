@@ -4,6 +4,9 @@ import Deploy from "../components/Deploy/Deploy"
 import logo from '../pages/codrlogo-light.png'
 import { ScrollTo } from "react-scroll-to";
 
+import withAuth from './../components/withAuth';
+
+
 
 
 function ThankU() {
@@ -21,7 +24,7 @@ function ThankU() {
 
                 <ScrollTo>
                     {({ scrollTo }) => (
-                        <button className="btn btn-info"onClick={() => scrollTo({ x: 20, y: 720, smooth: true })}>Learn How to Deploy</button>
+                        <button className="btn btn-info" onClick={() => scrollTo({ x: 20, y: 720, smooth: true })}>Learn How to Deploy</button>
                     )}
                 </ScrollTo>
             </Jumbotron>
@@ -35,4 +38,4 @@ function ThankU() {
 
 }
 
-export default ThankU;
+export default withAuth(ThankU);

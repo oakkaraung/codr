@@ -4,6 +4,7 @@ import mike from "../../pages/profilePics/mike.JPG";
 import trevor from "../../pages/profilePics/trevor.jpg";
 import oakkar from "../../pages/profilePics/oakkar.jpg";
 import soheil from "../../pages/profilePics/soheil.png";
+import { Link } from 'react-router-dom';
 
 import { ScrollTo } from "react-scroll-to";
 
@@ -49,8 +50,9 @@ class About extends Component {
             </div>
             <div className="col-lg-6 order-lg-1">
               <div className="p-5">
-                <h2 className="display-4">About Codr!</h2>
-                <p>This website is the final project of a team of four going through a three month web development program. After about two weeks of development, what you currently see is the outcome.</p>
+                <h2 className="display-4">What is Codr?</h2>
+                <p>Codr is a free web application that provides its users with templates that they can simply click on and modify many aspects of. Once users finish editing a template, they are given the option to download an HTML file which will display the website that the users were editing earlier. This file may then be personally used by the user linked to a domain as their own website.</p>
+                <Link to="/profile" class="navbar-brand">Check out the templates!</Link>
               </div>
             </div>
           </div>

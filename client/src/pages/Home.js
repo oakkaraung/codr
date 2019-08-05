@@ -3,6 +3,7 @@ import logo from '../pages/codrlogo-light.png'
 import Jumbotron from "../components/Jumbotron/Jumbotron"
 import FrontPage from "../components/CodrInfo/FrontPage"
 import { ScrollTo } from "react-scroll-to";
+import { Link } from 'react-router-dom';
 
 
 /* Add in Logo here and slides down to about section. */

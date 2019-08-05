@@ -193,12 +193,12 @@ class TemplateTwo extends Component {
                             <div className="col-lg-12 order-lg-1">
                                 <div className="p-5">
                                     <form>
-                                        <input type="text" id="h1Input" placeholder="Name Here" className="display-4 name"></input>
-                                        <input type="text" id="h2Input" placeholder="Title" class="form-control form-control-lg cardInput"></input>
-                                        <input type="text" id="h3Input" placeholder="Phone Number" class="form-control form-control-lg cardInput"></input>
-                                        <input type="text" id="h4Input" placeholder="Email Address" class="form-control form-control-lg cardInput"></input>
+                                        <input type="text" id="oneInput" placeholder="Name Here" className="display-4 name"></input>
+                                        <input type="text" id="twoInput" placeholder="Title" class="form-control form-control-lg cardInput"></input>
+                                        <input type="text" id="threeInput" placeholder="Phone Number" class="form-control form-control-lg cardInput"></input>
+                                        <input type="text" id="fourInput" placeholder="Email Address" class="form-control form-control-lg cardInput"></input>
                                         <br></br>
-                                        <textarea type="text" align="top" id="h5Input" className="bodyText form-control-lg" placeholder="Use this section as a place to add some information about yourself. We designed this digital business card as a green answer to a commonly used networking tool. Wow your next contact with this simple, yet elegant bit of technology and save tons of money by not printing cards that will get lost in a wallet. Leave a lasting impression with a digital version catered to your information for free!"></textarea>
+                                        <textarea type="text" align="top" id="fiveInput" className="bodyText form-control-lg" placeholder="Use this section as a place to add some information about yourself. We designed this digital business card as a green answer to a commonly used networking tool. Wow your next contact with this simple, yet elegant bit of technology and save tons of money by not printing cards that will get lost in a wallet. Leave a lasting impression with a digital version catered to your information for free!"></textarea>
                                     </form>
                                 </div>
                             </div>
@@ -208,7 +208,7 @@ class TemplateTwo extends Component {
 
                 <footer className="py-6 bg-black text-center">
                     <div className="container">
-                        <input type="text" id="h9Input" className="m-0 text-center text-black small footercss" placeholder="Copyright &copy; Your Business Card 2019"></input>
+                        <input type="text" id="sixInput" className="m-0 text-center text-black small footercss" placeholder="Copyright &copy; Your Business Card 2019"></input>
                     </div>
 
                 </footer>
@@ -218,12 +218,12 @@ class TemplateTwo extends Component {
                         <div className="col-lg-1 mx-auto">
                             <Link to="/thankyou">
                                 <button className="btn btn-primary" onClick={() => {
-                                    var formInput1 = document.getElementById("h1Input").value;
-                                    var formInput2 = document.getElementById("h2Input").value;
-                                    var formInput3 = document.getElementById("h3Input").value;
-                                    var formInput4 = document.getElementById("h4Input").value;
-                                    var formInput5 = document.getElementById("h5Input").value;
-                                    var formInput6 = document.getElementById("h6Input").value;
+                                    var formInput1 = document.getElementById("oneInput").value;
+                                    var formInput2 = document.getElementById("twoInput").value;
+                                    var formInput3 = document.getElementById("threeInput").value;
+                                    var formInput4 = document.getElementById("fourInput").value;
+                                    var formInput5 = document.getElementById("fiveInput").value;
+                                    var formInput6 = document.getElementById("sixInput").value;
                                     this.componentDidUpdate()
                                     download("index.html",
                                         formInput1,

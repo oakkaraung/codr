@@ -63,6 +63,9 @@ class Navbar extends Component {
                         <li className="nav-item">
                             <Link className="nav-link" to="/profile">Templates</Link>
                         </li>
+                        <li>
+                            <Link className="nav-link" to="/AboutUs">About Us</Link>
+                        </li>    
                     </ul>
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">

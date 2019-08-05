@@ -14,6 +14,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import TemplateOne from './pages/TemplateOne';
 import TemplateTwo from './pages/TemplateTwo';
+import AboutUs from './pages/AboutUs';
 import ThankU from './pages/ThankU';
 
 // Here is if we have an id_token in localStorage
@@ -28,6 +29,7 @@ ReactDOM.render(
             <Route path="*" component={Navbar} />
             <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/AboutUs" component={AboutUs} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/signup" component={Signup} />
             <Route exact path="/profile" component={Profile} />

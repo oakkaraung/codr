@@ -17,58 +17,55 @@
 
 }
 
-.bodyText {
-    color: #fff;
-    text-align: justify;
-}
-
-.bodyText::placeholder {
+.aboutText::placeholder {
     color: #fff;
     opacity: 1; /* Firefox */
     text-align: justify;
 }
 
-#h1Input {
+#oneInput {
     color:#fff;
 }
 
-#h2Input {
+#twoInput {
     color:#fff;
 }
 
-#h3Input {
+#threeInput {
     color:#fff;
 }
 
-#h4Input {
+#fourInput {
     color:#fff;
 }
 
-#h5Input {
+#fiveInput {
     color:#fff;
+    text-align: justify;
 }
 
-#h1Input::placeholder {
+#oneInput::placeholder {
     color: #fff;
     opacity: 1; /* Firefox */
 }
 
-#h2Input::placeholder {
+#twoInput::placeholder {
     color: #fff;
     opacity: 1; /* Firefox */
 }
 
-#h3Input::placeholder {
+#threeInput::placeholder {
     color: #fff;
     opacity: 1; /* Firefox */
 }
 
-#h4Input::placeholder {
+#fourInput::placeholder {
     color: #fff;
     opacity: 1; /* Firefox */
 }
 
-#h5Input::placeholder {
+#fiveInput::placeholder {
     color: #fff;
     opacity: 1; /* Firefox */
+    text-align: justify;
 }

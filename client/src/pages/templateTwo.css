@@ -1,0 +1,74 @@
+.bgroundImage {
+    background-image: url("./bcardbackground.jpg");
+   }
+
+.cardInput {
+    background: transparent !important;
+    border: 0px !important;
+}
+
+.name {
+    font-family: 'Permanent Marker', cursive;
+    float: right;
+}
+
+.name::placeholder {
+    font-family: 'Permanent Marker', cursive;
+
+}
+
+.bodyText {
+    color: #fff;
+    text-align: justify;
+}
+
+.bodyText::placeholder {
+    color: #fff;
+    opacity: 1; /* Firefox */
+    text-align: justify;
+}
+
+#h1Input {
+    color:#fff;
+}
+
+#h2Input {
+    color:#fff;
+}
+
+#h3Input {
+    color:#fff;
+}
+
+#h4Input {
+    color:#fff;
+}
+
+#h5Input {
+    color:#fff;
+}
+
+#h1Input::placeholder {
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+
+#h2Input::placeholder {
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+
+#h3Input::placeholder {
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+
+#h4Input::placeholder {
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+
+#h5Input::placeholder {
+    color: #fff;
+    opacity: 1; /* Firefox */
+}

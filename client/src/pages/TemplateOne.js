@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import React, { Component } from 'react';
 import './templateOne.css'
+import ReactTooltip from 'react-tooltip'
+
 
 /* THIS IS OUR FIRST TEMPLATE PAGE */
 
@@ -194,8 +196,8 @@ function download(
 class TemplateOne extends Component {
 
     componentDidUpdate() {
-        window.scrollTo(0,0);
-      }
+        window.scrollTo(0, 0);
+    }
 
     render() {
         return (
@@ -205,10 +207,18 @@ class TemplateOne extends Component {
                         <div className="masthead-content">
                             <div className="container">
                                 <br /><br /><br /><br /><br />
-                                <input type="text" id="h1Input" placeholder="Welcome to my Website!" className="display-3 text-center" />
+                                <input data-tip data-for="header" type="text" id="h1Input" placeholder="Welcome to my Website!" className="display-3 text-center" />
+                                <ReactTooltip id="header" aria-haspopup="true"  >
+                                    <p>headers are commonly used at the top of websites similar to a letterhead</p>
+                                    <p>We're using a H1 tag here which determines the size</p>
+                                 
+                                </ReactTooltip>
                                 <br /><br /><br />
                                 <form>
-                                    <input type="text" id="h2Input" placeholder="Tweet Tweet Edit Text!" className="masthead-subheading mb-0 toptext text-center"></input>
+                                    <input data-tip data-for="small" type="text" id="h2Input" placeholder="Tweet Tweet Edit Text!" className="masthead-subheading mb-0 toptext text-center"></input>
+                                    <ReactTooltip id="small" aria-haspopup="true"  >
+                                        <p>Using a H2 tag here, we can differenciate text sizes without using CSS</p>
+                                    </ReactTooltip>
                                 </form>
                             </div>
                         </div>
@@ -230,8 +240,15 @@ class TemplateOne extends Component {
                             <div className="col-lg-6 order-lg-1">
                                 <div className="p-5">
                                     <form>
-                                        <input type="text" id="h3Input" placeholder="A Scarlet Tanger" className="display-4"></input>
-                                        <textarea type="text" align="top" id="h4Input" className="bodyText" placeholder="Lorem iinputsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."></textarea>
+                                        <input data-tip data-for="section" type="text" id="h3Input" placeholder="A Scarlet Tanger" className="display-4"></input>
+                                        <ReactTooltip id="section" aria-haspopup="true" >
+                                            <p>using a SECTION tag we can split up the code for uniformity and accessibility</p>
+                                        </ReactTooltip>
+
+                                        <textarea data-tip data-for="textArea" type="text" align="top" id="h4Input" className="bodyText" placeholder="Lorem iinputsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."></textarea>
+                                        <ReactTooltip id="textArea" aria-haspopup="true"  >
+                                            <p>simplest way to add code to your HTML file is with a P tag</p>
+                                        </ReactTooltip>
                                     </form>
                                 </div>
                             </div>
@@ -290,7 +307,7 @@ class TemplateOne extends Component {
                     <div className="row">
                         <div className="col-lg-1 mx-auto">
                             <Link to="/thankyou">
-                                <button className="btn btn-primary" onClick={() => {
+                                <button data-tip data-for="export" className="btn btn-primary" onClick={() => {
                                     var formInput1 = document.getElementById("h1Input").value;
                                     var formInput2 = document.getElementById("h2Input").value;
                                     var formInput3 = document.getElementById("h3Input").value;
@@ -313,6 +330,9 @@ class TemplateOne extends Component {
                                         formInput9
                                     )
                                 }}>download</button>
+                                <ReactTooltip id="export" aria-haspopup="true"  >
+                                    <p>this will export your file as a HTML file!</p>
+                                </ReactTooltip>
                             </Link>
                         </div>
                     </div>

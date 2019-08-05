@@ -1,0 +1,60 @@
+.display-3 {
+    background: transparent !important;
+    border: 0px !important;
+    color:#fff;
+}
+
+.display-3::placeholder {
+    color: #fff;
+    opacity: 1; /* Firefox */
+  }
+
+.display-4 {
+    background: transparent !important;
+    border: 0px !important;
+}
+
+.bodyText {
+    background: transparent !important;
+    border: 0px !important;
+    width: 500px;
+    height: 300px;
+    resize: none;
+}
+
+.tagline {
+    background: transparent !important;
+    border: 0px !important;
+}
+
+.webTheme {
+    background-color: #f55d42 !important;
+    background-image: url("https://images.pexels.com/photos/2346344/pexels-photo-2346344.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: 'cover';
+    background-size: 100% 800px;
+    height:680px;
+}
+
+
+.footercss {
+    background: transparent !important;
+    border: 0px !important;
+}
+
+.toptext {
+    background: transparent !important;
+    border: 0px !important;
+    font-size: 20px
+}
+
+.jumbotron {
+    border-radius: 0 !important;
+}
+
+#h2Input {
+    color:#fff;
+}
+#h2Input::placeholder {
+    color: #fff;
+    opacity: 1; /* Firefox */
+  }

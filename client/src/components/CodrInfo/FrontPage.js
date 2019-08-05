@@ -1,9 +1,7 @@
 import React, {Component} from "react";
-import logo from '../../pages/codr-logo.png';
 import codejargon from "../../pages/codejargon.jpg";
 import collab from "../../pages/collab.jpg";
 import annoyed from "../../pages/annoyed.jpg";
-import soheil from "../../pages/profilePics/soheil.png";
 
 import { ScrollTo } from "react-scroll-to";
 
@@ -17,7 +15,12 @@ var container2 = {
 }
 
 var whiteText = {
-  color: '#ffffff'
+  color: '#ffffff',
+  textAlign: 'justify'
+}
+
+var justify = {
+  textAlign: 'justify'
 }
 
 class FrontPage extends Component {
@@ -57,8 +60,8 @@ class FrontPage extends Component {
             <div className="col-lg-6 order-lg-1">
               <div className="p-5">
                 <h2 className="display-4">Why Use Us?</h2>
-                <p>Im sure you have seen advertisements for a website that will give you a template for various web applications that you can edit and use.
-                    The wonderful thing about Codr is while we offer a similar service, however ours will give you a comprehensive understanding of how it actually actually
+                <p style={justify}>Im sure you have seen advertisements for a website that will give you a template for various web applications that you can edit and use.
+                    The wonderful thing about Codr is that we offer a similar service, however ours will give you a comprehensive understanding of how it actually actually
                     works and what the code means that you are creating. We would love to give the full coding experience to people without the understanding
                     of how coding works.
                 </p>
@@ -93,7 +96,7 @@ class FrontPage extends Component {
             <div className="col-lg-6 order-lg-1">
               <div className="p-5">
                 <h2 className="display-4">Let Us Help You Learn!</h2>
-                <p>We as coders constantly are learning. There is no one person that knows it all! Let us help you deshroud some of the 
+                <p style={justify}>We as coders constantly are learning. There is no one person that knows it all! Let us help you deshroud some of the 
                     confusion around this to give you a better step in the right direction to understanding it. The majority of a programmers
                     time is spent learning new material. We are not excluded from this group and we hope to give you a push in the right 
                     direction to join in on this wealth of knowledge.

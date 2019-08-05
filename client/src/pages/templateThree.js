@@ -201,16 +201,86 @@ class TemplateThree extends Component {
         return (
             // Start page Design
             <div>
-                <header class="masthead d-flex">
-                    <div class="container text-center my-auto">
-                        <h1 class="mb-1">Stylish Portfolio</h1>
-                        <h3 class="mb-5">
-                            <em>A Free Bootstrap Theme by Start Bootstrap</em>
-                        </h3>
-                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+                <section class="resume">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-8 col-sm-12">
+                            <br /><br />
+                            <p>Highly organized and meticulous Administrative Assistant with experience in corporate office
+                                settings.Adept at preparing and maintaining files, greeting visitors and restocking supplies. Good
+                    communicator and planner with strong judgment and critical thinking abilities.</p>
+                            <h4 class="lines">Work History</h4>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <p>02/2018 - Current</p>
+                                </div>
+                                <div class="col-md-10">
+                                    <h5>Administrative Assistant</h5>
+                                    <h6>Company A, San Diego, CA</h6>
+                                    <ul>
+                                        <li>Screened all vistors and directed them to the correct employee or office.</li>
+                                        <li>Facilitated organized record retrieval and access.</li>
+                                        <li>Organized all new hire, security and temporary paperwork.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <p>06/2016 - 02/2018</p>
+                                </div>
+                                <div class="col-md-10">
+                                    <h5>Administrative Assistant</h5>
+                                    <h6>Company A, San Diego, CA</h6>
+                                    <ul>
+                                        <li>Screened all vistors and directed them to the correct employee or office.</li>
+                                        <li>Facilitated organized record retrieval and access.</li>
+                                        <li>Organized all new hire, security and temporary paperwork.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <p>08/2014 - 06/2016</p>
+                                </div>
+                                <div class="col-md-10">
+                                    <h5>Administrative Assistant</h5>
+                                    <h6>Company A, San Diego, CA</h6>
+                                    <ul>
+                                        <li>Screened all vistors and directed them to the correct employee or office.</li>
+                                        <li>Facilitated organized record retrieval and access.</li>
+                                        <li>Organized all new hire, security and temporary paperwork.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h4 class="lines">Education</h4>
+                            <div class="row">
+                                <div class="col-md-2">
+                                </div>
+                                <div class="col-md-10">
+                                    <h5>Bachelor of Arts</h5>
+                                    <p>
+                                        University of San Diego - San Diego, CA
+                        </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 blue">
+                            <h1>Your Name</h1>
+                            <h5>Profession</h5>
+                            <br /><br />
+                            <h4>Personal Info</h4>
+                            <h6>Address</h6>
+                            <p>San Diego, CA, 92116</p>
+                            <br />
+                            <h4>Skills</h4>
+                            <ul>
+                                <li>Time management</li>
+                                <li>Time Letter prepatation</li>
+                                <li>Correspondence handling</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="overlay"></div>
-                </header>
+                </section>
 
                 {/* Page style is above */}
                 <section>

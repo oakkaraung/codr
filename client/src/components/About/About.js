@@ -55,13 +55,6 @@ class About extends Component {
             </div>
           </div>
         </div>
-        <div className="container-fluid" style={container2}>
-          <div className="row align-items-center">
-            <div className="mx-auto">
-              <h3 className="p-3" style={whiteText}>{this.state.numUsers} current Codr users!</h3>
-            </div>
-          </div>
-        </div>
         <div className="container-fluid" style={container1}>
           <div className="row align-items-center">
             <div className="col-lg-6 order-lg-1">

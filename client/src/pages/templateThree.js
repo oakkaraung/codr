@@ -34,7 +34,7 @@ function download(
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!--below you will see some things wrapped in a "stlyle" tag, this adds the styles such as colors and sizing of fonts, borders and anything visual
+    <!--below you will see some things wrapped in a "style" tag, this adds the styles such as colors and sizing of fonts, borders and anything visual
     that you will see on your website-->
 
     <style>
@@ -201,20 +201,20 @@ class TemplateThree extends Component {
         return (
             // Start page Design
             <div>
-                <section class="resume">
-                    <div class="row">
-                        <div class="col-md-1"></div>
-                        <div class="col-md-8 col-sm-12">
+                <section className="resume">
+                    <div className="row">
+                        <div className="col-md-1"></div>
+                        <div className="col-md-8 col-sm-12">
                             <br /><br />
                             <p>Highly organized and meticulous Administrative Assistant with experience in corporate office
                                 settings.Adept at preparing and maintaining files, greeting visitors and restocking supplies. Good
                     communicator and planner with strong judgment and critical thinking abilities.</p>
-                            <h4 class="lines">Work History</h4>
-                            <div class="row">
-                                <div class="col-md-2">
+                            <h4 className="lines">Work History</h4>
+                            <div className="row">
+                                <div className="col-md-2">
                                     <p>02/2018 - Current</p>
                                 </div>
-                                <div class="col-md-10">
+                                <div className="col-md-10">
                                     <h5>Administrative Assistant</h5>
                                     <h6>Company A, San Diego, CA</h6>
                                     <ul>
@@ -224,11 +224,11 @@ class TemplateThree extends Component {
                                     </ul>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-2">
+                            <div className="row">
+                                <div className="col-md-2">
                                     <p>06/2016 - 02/2018</p>
                                 </div>
-                                <div class="col-md-10">
+                                <div className="col-md-10">
                                     <h5>Administrative Assistant</h5>
                                     <h6>Company A, San Diego, CA</h6>
                                     <ul>
@@ -238,11 +238,11 @@ class TemplateThree extends Component {
                                     </ul>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-2">
+                            <div className="row">
+                                <div className="col-md-2">
                                     <p>08/2014 - 06/2016</p>
                                 </div>
-                                <div class="col-md-10">
+                                <div className="col-md-10">
                                     <h5>Administrative Assistant</h5>
                                     <h6>Company A, San Diego, CA</h6>
                                     <ul>
@@ -252,11 +252,11 @@ class TemplateThree extends Component {
                                     </ul>
                                 </div>
                             </div>
-                            <h4 class="lines">Education</h4>
-                            <div class="row">
-                                <div class="col-md-2">
+                            <h4 className="lines">Education</h4>
+                            <div className="row">
+                                <div className="col-md-2">
                                 </div>
-                                <div class="col-md-10">
+                                <div className="col-md-10">
                                     <h5>Bachelor of Arts</h5>
                                     <p>
                                         University of San Diego - San Diego, CA
@@ -264,7 +264,7 @@ class TemplateThree extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-12 blue">
+                        <div className="col-md-3 col-sm-12 blue">
                             <h1>Your Name</h1>
                             <h5>Profession</h5>
                             <br /><br />

@@ -33,7 +33,7 @@ class Card extends Component {
             <div className="card-body">
               <h5 className="card-title">Template three</h5>
               <p className="card-text">Change to template three.</p>
-              <Link to="/TemplateOne" className="btn btn-info" onClick={this.componentDidUpdate}>Go to Template Three</Link>
+              <Link to="/TemplateThree" className="btn btn-info" onClick={this.componentDidUpdate}>Go to Template Three</Link>
             </div>
           </div>
         </div>

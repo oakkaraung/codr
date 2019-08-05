@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import React, { Component } from 'react';
 import './templateTwo.css'
+import ReactTooltip from 'react-tooltip'
+
 
 /* THIS IS OUR FIRST TEMPLATE PAGE */
 
@@ -192,14 +194,23 @@ class TemplateTwo extends Component {
                             </div>
                             <div className="col-lg-12 order-lg-1">
                                 <div className="p-5">
-                                    <form>
-                                        <input type="text" id="h1Input" placeholder="Name Here" className="display-4 name"></input>
+                                    <form >
+                                        <input data-tip data-for="H1" type="text" id="h1Input" placeholder="Name Here" className="display-4 name"></input>
+                                        <ReactTooltip id="H1" aria-haspopup="true"  >
+                                            <p> using H1 for bigger size, also using css we can determine the positioning</p>
+
+                                        </ReactTooltip>
                                         <input type="text" id="h2Input" placeholder="Title" class="form-control form-control-lg cardInput"></input>
                                         <input type="text" id="h3Input" placeholder="Phone Number" class="form-control form-control-lg cardInput"></input>
                                         <input type="text" id="h4Input" placeholder="Email Address" class="form-control form-control-lg cardInput"></input>
                                         <br></br>
-                                        <textarea type="text" align="top" id="h5Input" className="bodyText form-control-lg" placeholder="Use this section as a place to add some information about yourself. We designed this digital business card as a green answer to a commonly used networking tool. Wow your next contact with this simple, yet elegant bit of technology and save tons of money by not printing cards that will get lost in a wallet. Leave a lasting impression with a digital version catered to your information for free!"></textarea>
+                                        <textarea data-tip data-for="form" type="text" align="top" id="h5Input" className="bodyText form-control-lg" placeholder="Use this section as a place to add some information about yourself. We designed this digital business card as a green answer to a commonly used networking tool. Wow your next contact with this simple, yet elegant bit of technology and save tons of money by not printing cards that will get lost in a wallet. Leave a lasting impression with a digital version catered to your information for free!"></textarea>
                                     </form>
+                                    <ReactTooltip id="form" aria-haspopup="true"  >
+                                        <p>using different H tags such as H1, H2 and etc, we can separate our input fields</p>
+                                        <p>using the STYLE tag we can target individual tags, and style them</p>
+
+                                    </ReactTooltip>
                                 </div>
                             </div>
                         </div>
@@ -217,7 +228,7 @@ class TemplateTwo extends Component {
                     <div className="row">
                         <div className="col-lg-1 mx-auto">
                             <Link to="/thankyou">
-                                <button className="btn btn-primary" onClick={() => {
+                                <button data-tip data-for="button" className="btn btn-primary" onClick={() => {
                                     var formInput1 = document.getElementById("h1Input").value;
                                     var formInput2 = document.getElementById("h2Input").value;
                                     var formInput3 = document.getElementById("h3Input").value;
@@ -234,6 +245,10 @@ class TemplateTwo extends Component {
                                         formInput6
                                     )
                                 }}>download</button>
+                                <ReactTooltip id="button" aria-haspopup="true"  >
+                                    <p> this will export your file as a HTML file!</p>
+
+                                </ReactTooltip>
                             </Link>
                         </div>
                     </div>

@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import React, { Component } from 'react';
 import './templateOne.css'
+import ReactTooltip from 'react-tooltip'
+
 
 /* THIS IS OUR FIRST TEMPLATE PAGE */
 
@@ -188,8 +190,8 @@ function download(
 class TemplateOne extends Component {
 
     componentDidUpdate() {
-        window.scrollTo(0,0);
-      }
+        window.scrollTo(0, 0);
+    }
 
     render() {
         return (
@@ -199,7 +201,17 @@ class TemplateOne extends Component {
                         <div className="masthead-content">
                             <div className="container">
                                 <br /><br /><br /><br /><br />
-                                <input type="text" id="h1Input" placeholder="Welcome to my Website!" className="display-3 text-center" />
+                                <input data-tip data-for="global" type="text" id="h1Input" placeholder="Welcome to my Website!" className="display-3 text-center" />
+                                <ReactTooltip id="global" aria-haspopup="true" role="example" >
+                                    <p>headers are commonly used at the top of websites similar to a letterhead</p>
+                                    <p>We're using a H1 tag here which determines the size</p>
+                                    {/* <p>You can put every thing here</p>
+                                    <ul>
+                                        <li>Word</li>
+                                        <li>Chart</li>
+                                        <li>Else</li>
+                                    </ul> */}
+                                </ReactTooltip>
                                 <br /><br /><br />
                                 <form>
                                     <input type="text" id="h2Input" placeholder="Tweet Tweet Edit Text!" className="masthead-subheading mb-0 toptext text-center"></input>

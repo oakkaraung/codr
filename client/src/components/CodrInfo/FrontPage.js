@@ -54,7 +54,7 @@ class FrontPage extends Component {
           <div className="row align-items-center">
             <div className="col-lg-6 order-lg-2">
               <div className="p-5">
-                <img className="img-fluid rounded-circle" src={codejargon} alt="Oakkar Aung" />
+                <img className="img-fluid rounded-circle" src={codejargon} alt="Code Jargon" />
               </div>
             </div>
             <div className="col-lg-6 order-lg-1">
@@ -73,15 +73,13 @@ class FrontPage extends Component {
           <div className="row align-items-center">
             <div className="col-lg-6 order-lg-1">
               <div className="p-5">
-                <img className="img-fluid rounded-circle" src={annoyed} alt="Michael Barachkov" />
+                <img className="img-fluid rounded-circle" src={annoyed} alt="Frustrated Man" />
               </div>
             </div>
             <div className="col-lg-6 order-lg-2">
               <div className="p-5">
                 <h2 className="display-4" style={whiteText}>We Understand!</h2>
-                <p style={whiteText}>Coding is very confusing! It quite literally is looking at a different language. We hope to give you
-                the basic tools you need to start out with our template and gain a better clarity of this foreign language for future
-                development.  </p>
+                <p style={whiteText}>Coding is very confusing! In fact, it is a completely different language. Sure, you might recognize the words and letters, but the context is quite challenging. Our goal is to give you the basic tools you need to begin your journey to understand this foreign language for future development. </p>
               </div>
             </div>
           </div>
@@ -90,16 +88,13 @@ class FrontPage extends Component {
           <div className="row align-items-center">
             <div className="col-lg-6 order-lg-2">
               <div className="p-5">
-                <img className="img-fluid rounded-circle" src={collab} alt="Soheil Behzad" />
+                <img className="img-fluid rounded-circle" src={collab} alt="Collaboration" />
               </div>
             </div>
             <div className="col-lg-6 order-lg-1">
               <div className="p-5">
                 <h2 className="display-4">Let Us Help You Learn!</h2>
-                <p style={justify}>We as coders constantly are learning. There is no one person that knows it all! Let us help you deshroud some of the 
-                    confusion around this to give you a better step in the right direction to understanding it. The majority of a programmers
-                    time is spent learning new material. We are not excluded from this group and we hope to give you a push in the right 
-                    direction to join in on this wealth of knowledge.
+                <p style={justify}>As coders, we are constantly learning. There is not a single person who knows it all! Let us clear up some of the confusion to help you understand the basics of coding! The majority of a programmers time is spent learning new material. We are not excluded from this group and we hope to give you a push in the right direction to join in on this wealth of knowledge.
                 </p>
                 <ScrollTo>
                 {({ scrollTo }) => (

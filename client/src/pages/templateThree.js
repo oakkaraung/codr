@@ -212,7 +212,10 @@ class TemplateThree extends Component {
                 <section className="resume">
                     <div className="row">
                         <div className="col-md-3 col-sm-12 blue">
-                        <input type="text" id="name" placeholder="Bobby Jones" className="h3 text-center"></input>
+                        <input data-tip data-for="name" type="text" id="name" placeholder="Bobby Jones" className="h3 text-center"></input>
+                        <ReactTooltip id="name" aria-haspopup="true"  >
+                                <p>What's your Name?!</p>
+                        </ReactTooltip>
                         <br />
                             <input type="text" id="occupation" placeholder="Software Programmer" className="h6 text-center"></input>
                             <br /><br />
@@ -223,7 +226,10 @@ class TemplateThree extends Component {
                             <input type="text" id="phoneNum" placeholder="(555)-555-5555" className="h6 text-center"></input>
                             <br /><br /><br />
                             <h3 class="title">Skills</h3>
-                            <input type="text" id="skillOne" placeholder="Time Management" className="h5 text-center"></input>
+                            <input data-tip data-for="skill" type="text" id="skillOne" placeholder="Time Management" className="h5 text-center"></input>
+                            <ReactTooltip id="skill" aria-haspopup="true"  >
+                                <p>It is 2019, typing is not a skill</p>
+                            </ReactTooltip>
                             <input type="text" id="skillTwo" placeholder="Decision Making" className="h5 text-center"></input>
                             <input type="text" id="skillThree" placeholder="Communication" className="h5 text-center"></input>
 
@@ -234,9 +240,12 @@ class TemplateThree extends Component {
                             <br /><br />
                             <h4 className="lines">Profile</h4>
                             <div className="container">
-                            <textarea type="text" id="profile" placeholder="Highly organized and meticulous Administrative Assistant with experience in corporate office
-                                settings.Adept at preparing and maintaining files, greeting visitors and restocking supplies. Good
-                    communicator and planner with strong judgment and critical thinking abilities." className="bodyText"></textarea>
+                            <textarea data-tip data-for="profile" type="text" id="profile" placeholder="Highly organized and meticulous Programmer with experience in corporate office
+                                settings. Adept at preparing and maintaining files, collaborating with a team and writing efficient code. Good communicator and planner with strong judgment and critical thinking abilities." className="bodyText"></textarea>
+                        <ReactTooltip id="profile" aria-haspopup="true"  >
+                                <p>A resume profile should be between one and four sentences long</p>
+                                <p>Be direct, confident, and make sure you focus on the job listing.</p>
+                        </ReactTooltip>
                             </div>
                             <h4 className="lines">Work History</h4>
                             <div className="row">
@@ -260,7 +269,10 @@ class TemplateThree extends Component {
                                     <input type="text" id="jobEnd2" placeholder="02/2018" className="h6 date"></input>
                                 </div>
                                 <div className="col-md-10">
-                                <input type="text" id="jobTitle2" placeholder="Junior Designer" className="h4"></input>
+                                <input data-tip data-for="job" type="text" id="jobTitle2" placeholder="Junior Designer" className="h4"></input>
+                                <ReactTooltip id="job" aria-haspopup="true"  >
+                                <p>Don't forget to fill everything out!</p>
+                                </ReactTooltip>
                                 <input type="text" id="jobDescription2" placeholder="Company B, San Diego, CA" className="h6"></input>
                                     <ul>
                                         <li><textarea type="text" id="taskb1" className="TaskText" placeholder="Producing clean, efficient code based on specifications."></textarea></li>

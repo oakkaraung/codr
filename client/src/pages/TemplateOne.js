@@ -115,7 +115,7 @@ function download(
                                 understanding of the flow for your site
                                 this is an example of a self closing tag below notice how there is no </img> there is only a slash at the end of the line so make it self closing-->
 
-                                <img class="img-fluid rounded-circle" src="https://thumbs-prod.si-cdn.com/yxYtidKUcbMprBCzkC3AH2cnUQ4=/420x240/https://public-media.si-cdn.com/filer/54/10/5410da58-2295-4e3a-a847-fecd41cdcdd9/scarlet_tanager.jpg" alt="" />
+                                <img class="img-fluid rounded-circle" src="https://images.pexels.com/photos/459654/pexels-photo-459654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="laptop" />
                             </div>
                         </div>
                         <div class="col-lg-6 order-lg-1">
@@ -135,7 +135,7 @@ function download(
                     <div class="row align-items-center">
                         <div class="col-lg-6">
                             <div class="p-5">
-                                <img class="img-fluid rounded-circle" src="https://www.hakaimagazine.com/wp-content/uploads/header-gulf-birds.jpg" alt="" />
+                                <img class="img-fluid rounded-circle" src="https://images.pexels.com/photos/1493371/pexels-photo-1493371.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="business" />
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -153,7 +153,7 @@ function download(
                     <div class="row align-items-center">
                         <div class="col-lg-6 order-lg-2">
                             <div class="p-5">
-                                <img class="img-fluid rounded-circle" src="http://justbirding.com/wp-content/uploads/2018/11/most-colorful-birds-on-the-planet.jpg" alt="" />
+                                <img class="img-fluid rounded-circle" src="https://images.pexels.com/photos/1376864/pexels-photo-1376864.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="handshake" />
                             </div>
                         </div>
                         <div class="col-lg-6 order-lg-1">

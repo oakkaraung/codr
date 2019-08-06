@@ -228,23 +228,13 @@ class TemplateTwo extends Component {
                     <div className="row">
                         <div className="col-lg-1 mx-auto">
                             <Link to="/thankyou">
-<<<<<<< HEAD
                                 <button data-tip data-for="button" className="btn btn-primary" onClick={() => {
-                                    var formInput1 = document.getElementById("h1Input").value;
-                                    var formInput2 = document.getElementById("h2Input").value;
-                                    var formInput3 = document.getElementById("h3Input").value;
-                                    var formInput4 = document.getElementById("h4Input").value;
-                                    var formInput5 = document.getElementById("h5Input").value;
-                                    var formInput6 = document.getElementById("h6Input").value;
-=======
-                                <button className="btn btn-primary" onClick={() => {
                                     var formInput1 = document.getElementById("oneInput").value;
                                     var formInput2 = document.getElementById("twoInput").value;
                                     var formInput3 = document.getElementById("threeInput").value;
                                     var formInput4 = document.getElementById("fourInput").value;
                                     var formInput5 = document.getElementById("fiveInput").value;
                                     var formInput6 = document.getElementById("sixInput").value;
->>>>>>> 5543bd2db7ba0ac857a7436b1782891f69302597
                                     this.componentDidUpdate()
                                     download("index.html",
                                         formInput1,

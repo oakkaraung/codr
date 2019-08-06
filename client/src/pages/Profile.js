@@ -4,10 +4,11 @@ import API from './../utils/API';
 // import { Col, Row, Container } from "../components/Grid";
 import { Link } from 'react-router-dom';
 // import About from '../components/About';
-import Jumbotron from "../components/Jumbotron/Jumbotron";
+// import Jumbotron from "../components/Jumbotron/Jumbotron";
 import Card from '../components/Card';
 import Footer from '../components/Footer/Footer'
 import logo from '../pages/codrlogo-light.png'
+import Background from '../pages/images/darkComp2.jpg'
 
 
 import { ScrollTo } from "react-scroll-to";
@@ -15,6 +16,17 @@ import { ScrollTo } from "react-scroll-to";
 //------------------------------------
 // THIS IS OUR TEMPLATE PAGE
 //------------------------------------
+
+var sectionStyle = {
+  width: "100%",
+  height: "100vh",
+  backgroundImage: `url(${Background})`,
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
+  clear: "both", 
+  paddingTop: 100, 
+  textAlign: "center"
+};
 
 class Profile extends Component {
 
@@ -34,7 +46,7 @@ class Profile extends Component {
 
   render() {
     return (<div>
-      <Jumbotron>
+      <div style={ sectionStyle }>
         <img src={logo} alt="CodrLogo" width="240px" height="200px" />
         <br></br><br></br>
         <h1 style={{ color: "white" }}>Welcome to Codr</h1>
@@ -47,7 +59,7 @@ class Profile extends Component {
             <button className="btn btn-info animateButton" onClick={() => scrollTo({ x: 20, y: 740, smooth: true })}>Browse Templates</button>
           )}
         </ScrollTo>
-      </Jumbotron>
+      </div>
       <Card />
       <Footer>
         <Link to="/">Go home</Link>

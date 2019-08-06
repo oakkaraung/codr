@@ -12,7 +12,6 @@ function Home() {
         <div>
             <Jumbotron >
                 <img src={logo} alt="CodrLogo" width="450px" height="400px" /><br></br><br></br><br></br>
-                <p>click here to learn why to use our app!</p>
                 <ScrollTo>
                     {({ scrollTo }) => (
                         <button className="btn btn-info animateButton" onClick={() => scrollTo({ x: 20, y: 755, smooth: true })}>Why Use Us?</button>

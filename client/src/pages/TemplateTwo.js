@@ -126,7 +126,9 @@ function download(
     .cardAbout {
         width: 400px;
     }
-
+    .profile {
+        overflow-wrap: break-word;
+    }
     </style>
 
     </head>
@@ -150,8 +152,13 @@ function download(
                                     <h3 type="text" id="h2Input" class="form-control form-control-lg cardInput">${form2value}</h3>
                                     <h3 type="text" id="h3Input" class="form-control form-control-lg cardInput">${form3value}</h3>
                                     <h3 type="text" id="h4Input" class="form-control form-control-lg cardInput">${form4value}</h3>
-                                    <br></br>
-                                    <p type="text" align="top" id="h5Input" class="bodyText">${form5value}</textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="p-5">
+                                    <p type="text" align="top" id="h5Input" class="bodyText profile">${form5value}</textarea>
                                 </div>
                             </div>
                         </div>

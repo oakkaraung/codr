@@ -214,7 +214,7 @@ class TemplateThree extends Component {
                         <div className="col-md-3 col-sm-12 blue">
                         <input data-tip data-for="name" type="text" id="name" placeholder="Bobby Jones" className="h3 text-center"></input>
                         <ReactTooltip id="name" aria-haspopup="true"  >
-                                <p>What's your Name?!</p>
+                                <p>with an INPUT tag we can indicate user input field</p>
                         </ReactTooltip>
                         <br />
                             <input type="text" id="occupation" placeholder="Software Programmer" className="h6 text-center"></input>
@@ -228,7 +228,7 @@ class TemplateThree extends Component {
                             <h3 class="title">Skills</h3>
                             <input data-tip data-for="skill" type="text" id="skillOne" placeholder="Time Management" className="h5 text-center"></input>
                             <ReactTooltip id="skill" aria-haspopup="true"  >
-                                <p>It is 2019, typing is not a skill</p>
+                                <p>we can use the same h tag to keep a uniformity to our text</p>
                             </ReactTooltip>
                             <input type="text" id="skillTwo" placeholder="Decision Making" className="h5 text-center"></input>
                             <input type="text" id="skillThree" placeholder="Communication" className="h5 text-center"></input>
@@ -243,8 +243,8 @@ class TemplateThree extends Component {
                             <textarea data-tip data-for="profile" type="text" id="profile" placeholder="Highly organized and meticulous Programmer with experience in corporate office
                                 settings. Adept at preparing and maintaining files, collaborating with a team and writing efficient code. Good communicator and planner with strong judgment and critical thinking abilities." className="bodyText"></textarea>
                         <ReactTooltip id="profile" aria-haspopup="true"  >
-                                <p>A resume profile should be between one and four sentences long</p>
-                                <p>Be direct, confident, and make sure you focus on the job listing.</p>
+                                <p>A TEXTAREA can hold an unlimited number of characters, and the text renders in a fixed-width font </p>
+                                <p>we can use TEXTAREA tag whitch defines a multi-line text input control</p>
                         </ReactTooltip>
                             </div>
                             <h4 className="lines">Work History</h4>
@@ -255,12 +255,16 @@ class TemplateThree extends Component {
                                 </div>
                                 <div className="col-md-10">
                                 <input type="text" id="jobTitle1" placeholder="React Developer" className="h4"></input>
-                                <input type="text" id="jobDescription1" placeholder="Company A, San Francisco, CA" className="h6"></input>
+                                <input data-tip data-for="list" type="text" id="jobDescription1" placeholder="Company A, San Francisco, CA" className="h6"></input>
                                     <ul>
                                         <li><textarea type="text" id="taska1" className="TaskText" placeholder="Responsible for development of new highly-responsive, web-based user interface."></textarea></li>
                                         <li><textarea type="text" id="taska2" className="TaskText" placeholder="Construct visualizations that are able to depict vast amounts of data."></textarea></li>
                                         <li><textarea type="text" id="taska3" className="TaskText" placeholder="Work and collaborate with the rest of the engineering team."></textarea></li>
                                     </ul>
+                                    <ReactTooltip id="list" aria-haspopup="true"  >
+                                        <p>we can use code to sort our text </p>
+                                        <p>The UL tag defines an unordered (bulleted) list</p>
+                                    </ReactTooltip>
                                 </div>
                             </div>
                             <div className="row">
@@ -315,7 +319,7 @@ class TemplateThree extends Component {
                     <div className="row">
                         <div className="col-lg-1 mx-auto">
                             <Link to="/thankyou">
-                                <button className="btn btn-primary" onClick={() => {
+                                <button data-tip data-for="button1" className="btn btn-primary" onClick={() => {
                                     var formInput1 = document.getElementById("name").value;
                                     var formInput2 = document.getElementById("occupation").value;
                                     var formInput3 = document.getElementById("address").value;
@@ -382,6 +386,10 @@ class TemplateThree extends Component {
                                         formInput31
                                     )
                                 }}>download</button>
+                                <ReactTooltip id="button1" aria-haspopup="true"  >
+                                    <p> this will export your file as a HTML file!</p>
+
+                                </ReactTooltip>
                             </Link>
                         </div>
                     </div>

@@ -298,7 +298,6 @@ class TemplateOne extends Component {
                         </div>
                     </div>
                 </section>
-
                 <footer className="py-5 bg-black text-center">
                     <div className="container">
                         <input type="text" id="h9Input" className="m-0 text-center text-black small footercss" placeholder="Copyright &copy; Your Website 2019"></input>

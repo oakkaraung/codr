@@ -33,15 +33,20 @@ function download(
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
 
     <!--below you will see some things wrapped in a "stlyle" tag, this adds the styles such as colors and sizing of fonts, borders and anything visual
     that you will see on your website-->
 
     <style>
-    
+    p {
+        overflow-wrap: break-word;
+    }
+
     .bgroundImage {
-        background-image: url("./bcardbackground.jpg");
+        background-image: url("https://i.imgur.com/oFrIb5d.jpg");
+        background-size: 'cover';
+        background-size: 100% 800px;
+        height: 680px;
        }
     
     .cardInput {
@@ -62,14 +67,12 @@ function download(
     .bodyText {
         color: #fff;
         text-align: justify;
-        font-family: 'Yellowtail', cursive;
     }
     
     .bodyText::placeholder {
         color: #fff;
         opacity: 1; /* Firefox */
         text-align: justify;
-        font-family: 'Yellowtail', cursive;
     }
     
     #h1Input {
@@ -119,6 +122,11 @@ function download(
     p {
         overflow-wrap: break-word;
     }
+
+    .cardAbout {
+        width: 400px;
+    }
+
     </style>
 
     </head>
@@ -132,7 +140,7 @@ function download(
 
         <div>
                 <section>
-                    <div class="container=fluid" class="bgroundImage">
+                    <div class="container=fluid bgroundImage">
                         <div class="row align-items-center">
                             <div class="col-lg-6 order-lg-2">
                             </div>
@@ -188,15 +196,14 @@ class TemplateTwo extends Component {
         return (
             <div>
                 <section>
-                    <div className="container=fluid" class="bgroundImage">
+                    <div className="container=fluid bgroundImage">
                         <div className="row align-items-center">
-                            <div className="col-lg-6 order-lg-2">
-                            </div>
+                            <div className="col-lg-6 order-lg-2"></div>
                             <div className="col-lg-12 order-lg-1">
                                 <div className="p-5">
                                     <form>
                                         <input data-tip data-for="H1" type="text" id="oneInput" placeholder="Name Here" className="display-4 name"></input>
-                                        <ReactTooltip id="H1" aria-haspopup="true"  >
+                                        <ReactTooltip id="H1" aria-haspopup="true">
                                             <p> using H1 for bigger size, also using css we can determine the positioning</p>
 
                                         </ReactTooltip>
@@ -209,7 +216,6 @@ class TemplateTwo extends Component {
                                     <ReactTooltip id="form" aria-haspopup="true">
                                         <p>using different H tags such as H1, H2 and etc, we can separate our input fields</p>
                                         <p>using the STYLE tag we can target individual tags, and style them</p>
-
                                     </ReactTooltip>
                                 </div>
                             </div>

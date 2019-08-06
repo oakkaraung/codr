@@ -41,7 +41,7 @@ function download(
 
     <style>
         .currentTheme {
-            background-image: url("https://images.pexels.com/photos/2346344/pexels-photo-2346344.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+            background-image: url("https://images.pexels.com/photos/313782/pexels-photo-313782.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
             background-size: 'cover';
             background-size: 100% 800px;
             height:680px;
@@ -210,7 +210,7 @@ class TemplateOne extends Component {
                         <div className="masthead-content">
                             <div className="container">
                                 <br /><br /><br /><br /><br />
-                                <input data-tip data-for="header" type="text" id="h1Input" placeholder="Welcome to my Website!" className="display-3 text-center" />
+                                <input data-tip data-for="header" type="text" id="h1Input" placeholder="Check out our Company!" className="display-3 text-center" />
                                 <ReactTooltip id="header" aria-haspopup="true"  >
                                     <p>headers are commonly used at the top of websites similar to a letterhead</p>
                                     <p>We're using a H1 tag here which determines the size</p>
@@ -218,7 +218,7 @@ class TemplateOne extends Component {
                                 </ReactTooltip>
                                 <br /><br /><br />
                                 <form>
-                                    <input data-tip data-for="small" type="text" id="h2Input" placeholder="Tweet Tweet Edit Text!" className="masthead-subheading mb-0 toptext text-center"></input>
+                                    <input data-tip data-for="small" type="text" id="h2Input" placeholder="Creative solutions" className="masthead-subheading mb-0 toptext text-center"></input>
                                     <ReactTooltip id="small" aria-haspopup="true"  >
                                         <p>Using a H2 tag here, we can differenciate text sizes without using CSS</p>
                                     </ReactTooltip>
@@ -237,13 +237,13 @@ class TemplateOne extends Component {
                         <div className="row align-items-center">
                             <div className="col-lg-6 order-lg-2">
                                 <div className="p-5">
-                                    <img className="img-fluid rounded-circle" src="https://thumbs-prod.si-cdn.com/yxYtidKUcbMprBCzkC3AH2cnUQ4=/420x240/https://public-media.si-cdn.com/filer/54/10/5410da58-2295-4e3a-a847-fecd41cdcdd9/scarlet_tanager.jpg" alt="" />
+                                    <img className="img-fluid rounded-circle" src="https://images.pexels.com/photos/459654/pexels-photo-459654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Laptop" />
                                 </div>
                             </div>
                             <div className="col-lg-6 order-lg-1">
                                 <div className="p-5">
                                     <form>
-                                        <input data-tip data-for="section" type="text" id="h3Input" placeholder="A Scarlet Tanger" className="display-4"></input>
+                                        <input data-tip data-for="section" type="text" id="h3Input" placeholder="Who we are" className="display-4"></input>
                                         <ReactTooltip id="section" aria-haspopup="true" >
                                             <p>using a SECTION tag we can split up the code for uniformity and accessibility</p>
                                         </ReactTooltip>
@@ -264,13 +264,13 @@ class TemplateOne extends Component {
                         <div className="row align-items-center">
                             <div className="col-lg-6">
                                 <div className="p-5">
-                                    <img className="img-fluid rounded-circle" src="https://www.hakaimagazine.com/wp-content/uploads/header-gulf-birds.jpg" alt="" />
+                                    <img className="img-fluid rounded-circle" src="https://images.pexels.com/photos/1493371/pexels-photo-1493371.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="business" />
                                 </div>
                             </div>
                             <div className="col-lg-6">
                                 <div className="p-5">
                                     <form>
-                                        <input type="text" id="h5Input" placeholder="A Painted Bunting" className="display-4"></input>
+                                        <input type="text" id="h5Input" placeholder="What we do" className="display-4"></input>
                                         <textarea type="text" id="h6Input" className="bodyText" placeholder="Lorem iinputsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."></textarea>
                                     </form>
                                 </div>
@@ -284,13 +284,13 @@ class TemplateOne extends Component {
                         <div className="row align-items-center">
                             <div className="col-lg-6 order-lg-2">
                                 <div className="p-5">
-                                    <img className="img-fluid rounded-circle" src="http://justbirding.com/wp-content/uploads/2018/11/most-colorful-birds-on-the-planet.jpg" alt="" />
+                                    <img className="img-fluid rounded-circle" src="https://images.pexels.com/photos/1376864/pexels-photo-1376864.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="handshake" />
                                 </div>
                             </div>
                             <div className="col-lg-6 order-lg-1">
                                 <div className="p-5">
                                     <form>
-                                        <input type="text" id="h7Input" placeholder="A Rainbow Lorikeet" className="display-4"></input>
+                                        <input type="text" id="h7Input" placeholder="You can Trust Us" className="display-4"></input>
                                         <textarea type="text" id="h8Input" className="bodyText" placeholder="Lorem iinputsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."></textarea>
                                     </form>
                                 </div>

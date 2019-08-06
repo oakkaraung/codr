@@ -1,5 +1,11 @@
+body {
+    height: 100vh;
+}
 .bgroundImage {
     background-image: url("./bcardbackground.jpg");
+    background-size: 'cover';
+    background-size: 100% 800px;
+    height: 680px;
    }
 
 .cardInput {
@@ -8,6 +14,8 @@
 }
 
 .name {
+    background: transparent !important;
+    border: 0px !important;
     font-family: 'Permanent Marker', cursive;
     float: right;
 }

@@ -36,7 +36,7 @@ function download(
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!--below you will see some things wrapped in a "stlyle" tag, this adds the styles such as colors and sizing of fonts, borders and anything visual
+    <!--below you will see some things wrapped in a "style" tag, this adds the styles such as colors and sizing of fonts, borders and anything visual
     that you will see on your website-->
 
     <style>
@@ -55,6 +55,9 @@ function download(
         #h2Header {
             color:#fff;
         }
+        p {
+            overflow-wrap: break-word;
+        }
     </style>
     </head>
 
@@ -67,7 +70,7 @@ function download(
 
         <div>
 
-            <!--when you add classes to divs you can stlye all of them together with the name you assign them all at once!
+            <!--when you add classes to divs you can style all of them together with the name you assign them all at once!
             when you use the Bootstrap cdn like we did above there are specific class names you can assign to elements to do the styling for you
             below you will see the name "jumbotron" this is called a component or a pre made object you can use from bootstrap-->
 

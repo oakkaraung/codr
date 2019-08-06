@@ -130,7 +130,7 @@ function download(
                 <div class="col-md-7 col-sm-12">
                     <br /><br />
                     <h4 class="lines">Profile</h4>
-                    <p>${form8value}</p>
+                    <p id="profile">${form8value}</p>
                     <h4 class="lines">Work History</h4>
                     <div class="row">
                         <div class="col-md-2">

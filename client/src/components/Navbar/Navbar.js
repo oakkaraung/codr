@@ -58,14 +58,11 @@ class Navbar extends Component {
     showNavigation = () => {
         if (this.Auth.loggedIn()) {
             return (
-                <nav className=" navbar-nav navbar-collapse sticky-top">
-                    <ul className="navbar-nav mr-auto">
+                <nav className=" navbar-nav  navbar-collapse sticky-top">
+                    <ul className="navbar-nav navbar-dark mr-auto">
                         <li className="nav-item">
                             <Link className="nav-link" to="/profile">Templates</Link>
-                        </li>
-                        <li>
-                            <Link className="nav-link" to="/AboutUs">About Us</Link>
-                        </li>    
+                        </li>  
                     </ul>
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
@@ -156,6 +153,7 @@ class Navbar extends Component {
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
                 <div className="container">
                     <Link className="navbar-brand" to="/">Codr</Link>
+                    <Link className="nav-link" to="/AboutUs">About Us</Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>

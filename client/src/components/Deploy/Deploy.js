@@ -4,6 +4,7 @@ import React from "react";
 function Deploy() {
     return (
         <section>
+        <br></br> <br></br> <br></br>
 
             <div classNameName="container">
                 <div className="row align-items-center">
@@ -23,7 +24,7 @@ function Deploy() {
                     <div className="col-md-12">
                         <div className="p-5">
                             <div className="embed-responsive embed-responsive-16by9">
-                            <iframe width="560" title="instructions" height="315" src="https://www.youtube.com/embed/BS5QzThmrA4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe width="560" title="instructions" height="315" src="https://www.youtube.com/embed/BS5QzThmrA4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>

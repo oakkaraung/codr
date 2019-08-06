@@ -37,16 +37,16 @@ class Navbar extends Component {
     handleSignupSubmit = event => {
         event.preventDefault();
         API.signUpUser(this.state.username, this.state.email, this.state.password)
-          .then(res => {
-            this.Auth.login(this.state.email, this.state.password)
-            // once the user has signed up
-            // send them to the main page
-                .then(res => {
-                    this.props.history.replace('/profile');
-                })
-          })
-          .catch(err => alert(err));
-      };
+            .then(res => {
+                this.Auth.login(this.state.email, this.state.password)
+                    // once the user has signed up
+                    // send them to the main page
+                    .then(res => {
+                        this.props.history.replace('/profile');
+                    })
+            })
+            .catch(err => alert(err));
+    };
 
     handleChange = event => {
         const { name, value } = event.target;
@@ -62,7 +62,7 @@ class Navbar extends Component {
                     <ul className="navbar-nav">
                         <li className="nav-item">
                             <Link className="nav-link" to="/profile">Templates</Link>
-                        </li>  
+                        </li>
                     </ul>
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
@@ -153,7 +153,11 @@ class Navbar extends Component {
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark bg-primary">
                 <div className="container">
                     <Link className="navbar-brand" to="/">Codr</Link>
-                    <Link className="nav-link" to="/AboutUs">About Us</Link>
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/AboutUs">About Us</Link>
+                        </li>
+                    </ul>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <Link className="navbar-toggler-icon" to="/signup"></Link>
                     </button>

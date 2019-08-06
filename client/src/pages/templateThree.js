@@ -89,6 +89,9 @@ function download(
         border-bottom: 2px solid darkcyan;
         justify-content: center;
     }
+    #profile {
+        overflow-wrap: break-word;
+    }
     </style>
     </head>
 

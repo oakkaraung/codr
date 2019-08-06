@@ -55,6 +55,9 @@ function download(
         #h2Header {
             color:#fff;
         }
+        p {
+            overflow-wrap: break-word;
+        }
     </style>
     </head>
 

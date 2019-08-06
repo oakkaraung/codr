@@ -119,6 +119,9 @@ function download(
         color: #fff;
         opacity: 1; /* Firefox */
     }
+    p {
+        overflow-wrap: break-word;
+    }
 
     .cardAbout {
         width: 400px;
@@ -143,16 +146,12 @@ function download(
                             </div>
                             <div class="col-lg-12 order-lg-1">
                                 <div class="p-5">
-                                    <form>
-                                        <h1 type="text" id="h1Input" class="display-4 name">${form1value}</h1>
-                                        <h3 type="text" id="h2Input" class="form-control form-control-lg cardInput">${form2value}</h3>
-                                        <h3 type="text" id="h3Input" class="form-control form-control-lg cardInput">${form3value}</h3>
-                                        <h3 type="text" id="h4Input" class="form-control form-control-lg cardInput">${form4value}</h3>
-                                        <br></br>
-                                        <div>
-                                            <p type="text" align="top" id="h5Input" class="cardAbout bodyText">${form5value}</textarea>
-                                        </div>
-                                    </form>
+                                    <h1 type="text" id="h1Input" class="display-4 name">${form1value}</h1>
+                                    <h3 type="text" id="h2Input" class="form-control form-control-lg cardInput">${form2value}</h3>
+                                    <h3 type="text" id="h3Input" class="form-control form-control-lg cardInput">${form3value}</h3>
+                                    <h3 type="text" id="h4Input" class="form-control form-control-lg cardInput">${form4value}</h3>
+                                    <br></br>
+                                    <p type="text" align="top" id="h5Input" class="bodyText">${form5value}</textarea>
                                 </div>
                             </div>
                         </div>

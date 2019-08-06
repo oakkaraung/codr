@@ -17,7 +17,7 @@
 .bodyText {
     background: transparent !important;
     border: 0px !important;
-    width: 500px !important; 
+    width: 500px !important;
     height: 300px;
     resize: none;
 }
@@ -62,9 +62,9 @@
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black;
-  }
+}
   
-  .tooltip .tooltiptext {
+.tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: #555;
@@ -79,9 +79,9 @@
     margin-left: -60px;
     opacity: 0;
     transition: opacity 0.3s;
-  }
+}
   
-  .tooltip .tooltiptext::after {
+.tooltip .tooltiptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -90,9 +90,9 @@
     border-width: 5px;
     border-style: solid;
     border-color: #555 transparent transparent transparent;
-  }
+}
   
-  .tooltip:hover .tooltiptext {
+.tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
-  }
+}

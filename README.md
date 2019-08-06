@@ -1,67 +1,30 @@
-# Create React Express App
+# Codr READ ME
 
-## About This Boilerplate
+Welcome to Codr! This program is the result of a 2 week long development phase for the final project of the UCSD Full-Stack Web Development Bootcamp. All four of our developers have put in many hours into this website and we hope that you enjoy its usage as much as we enjoyed creating this product.
 
-This setup allows for a Node/Express/React/JWT app which can be easily deployed to Heroku.
+Codr is a website that allows users to easily design and create a website using our templates and instead of paying a monthly fee or such like other user-friendly website designer websites, gives the user the source code for the website the user designed. This allows the user freedom to do many things such as deploying the website with a domain the user purchased, or even allowing new web developers to understand what goes on in a basic website. The outputted source code comes with a number of commented code which explains to the user what each component in the source code does what in the finished product. This website appeals to many from those who simply want a simple website without paying an outside company fees to do so, to new web devs looking to have a finished product to modify and see the inner workings of the code.
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+## Getting Started
 
-An article on how the server is setup with JWT can be found [here](https://hptechblogs.com/using-json-web-token-for-authentication/). This has been modified to use a mongo database instead of hardcoded array of users.
+Codr requires users to sign up for an account to prevent robot users from spamming our services (sorry Robocop). The first step to the user's new website is to simply sign up for an account to gain access to our multiple templates.
 
-The front end has been setup to use JWT as a way of authenticating users and routes. To understand it's structure better please refer to the following article [here](https://hptechblogs.com/using-json-web-token-react/)
+## Using The Templates
 
-Please feel free to modify this code in anyway you see fit for your project. It is a boilerplate setup that tries to make sure you can get something up and running without having to worry about setting up user authentication from scratch.
-I highly suggest you read the articles before jumping in so you can have an better understanding of how everything works in the code. 
+Once the user has selected his/her desired website, they are presented with a website that is very similar to their final product, a.k.a. the template. The template's main purpose is to provide the user with a website full of text input fields that is already formatted, styled, and stocked with pictures that leaves the user with creative freedom to change the text on the website to match their desired outcome. All text inputs are editable, including the copyright footer at the bottom of each website (NOTE: To actually copyright your website, visit [The US Copyright Website](https://www.copyright.gov/)).
 
-Server-side article and using JWT: https://hptechblogs.com/using-json-web-token-for-authentication/
+## After The Download
 
-Front End article on using the JWT on a react application: https://hptechblogs.com/using-json-web-token-react/
+After designing their website, the user then downloads the actual HTML file for their designed website and is taken to a page with instructions on how to do a simple deploy of the website onto The World Wide Web through Google Drive. Alternatively, the user may take their new website file and host it on a domain that they have purchased. Instructions to do so can be found [here](https://www.business.qld.gov.au/starting-business/internet-start-ups/online-basics/creating-websites).
 
-## Starting the app locally
+## Support
 
-Add a .env at the top level of this project.
+If problems were to arise with the website, feel free to contact one of our team members:
 
-Then inside of the .env add a SERVER_SECRET set to any value you'd like
+oaaung@ucsd.edu
+mike.barachkov@outlook.com
+soheilbehzad2015@gmail.com
+trevorfairbank92@gmail.com
 
-```
-SERVER_SECRET = 123456
-```
+### Authors
 
-First off make sure you have a local version of MongoDB running on your machine. This project will make a local database for you called `appDB`.
-
-```
-mongod
-```
-
-Start by installing front and backend dependencies. While in the root directory, run the following command:
-
-```
-npm install
-```
-
-After all installations complete, run the following command in your terminal:
-
-```
-npm start
-```
-
-That's it, your app should be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
-
-## Deployment (Heroku)
-
-### Create a Git Repo
-
-Once you're ready to deploy, start by making sure your project is a git repository. If so, proceed to the next section, otherwise run the following commands in your terminal:
-
-```
-git init
-git add .
-git commit -m "Initial commit"
-```
-
-### Deploying
-
-1. Go onto your heroku account and link your repository through the UI
-2. Go to resources and find mLab as a Add-on
-3. Provision a Mongo Database
-4. Go back and click "Deploy"
+[Oakkar Aung](https://github.com/oakkaraung), [Michael Barachkov](https://github.com/mbarachkov), [Soheil Behzad](https://github.com/soul1904), [Trevor Fairbank](https://github.com/Trevorfairbank)

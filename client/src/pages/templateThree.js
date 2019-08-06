@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import React, { Component } from 'react';
 import './templateThree.css'
+import ReactTooltip from 'react-tooltip'
 
 /* THIS IS OUR FIRST TEMPLATE PAGE */
 
@@ -14,7 +15,30 @@ function download(
     form6value,
     form7value,
     form8value,
-    form9value
+    form9value,
+    form10value,
+    form11value,
+    form12value,
+    form13value,
+    form14value,
+    form15value,
+    form16value,
+    form17value,
+    form18value,
+    form19value,
+    form20value,
+    form21value,
+    form22value,
+    form23value,
+    form24value,
+    form25value,
+    form26value,
+    form27value,
+    form28value,
+    form29value,
+    form30value,
+    form31value
+
 ) {
     var fileContent = "";
     fileContent += `<html lang="en">
@@ -30,29 +54,41 @@ function download(
     there are some special elements that do not require you to close because they are what is called "self closing"
     we will go over a self closing tag below when we encounter one
 
-    this line of code below is calling on whats called a "cdn" for Bootstrap! a library for html whitch adds styling and mobile responsiveness-->
+    These lines of code below are calling on whats called a "cdn" for Bootstrap! a library for html whitch adds styling and mobile responsiveness-->
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
     <!--below you will see some things wrapped in a "style" tag, this adds the styles such as colors and sizing of fonts, borders and anything visual
     that you will see on your website-->
 
     <style>
-        .currentTheme {
-            background-image: url("https://images.pexels.com/photos/2346344/pexels-photo-2346344.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-            background-size: 'cover';
-            background-size: 100% 800px;
-            height:680px;
-        }
-        .jumbotron {
-            border-radius: 0 !important;
-        }
-        .display-3 {
-            color:#fff;
-        }
-        #h2Header {
-            color:#fff;
-        }
+    .blue {
+        height: 100vh;
+        background-color: rgb(30, 153, 153);
+        padding: 40px;
+        text-align: center;
+    }
+    
+    .title {
+        background-color:  rgb(2, 97, 97);
+        padding: 10px;
+        margin: 20px;
+    }
+    .lines {
+        border-bottom: 2px solid darkcyan;
+        justify-content: center;
+    }
     </style>
     </head>
 
@@ -63,119 +99,91 @@ function download(
         <!--one way to think about a "div" is an imaginary box you can fill with whatever you would like. think of it as a container
         you can use the styling we saw earlier to make them large, small, add a border or fill with a color are some examples-->
 
-        <div>
 
             <!--when you add classes to divs you can stlye all of them together with the name you assign them all at once!
             when you use the Bootstrap cdn like we did above there are specific class names you can assign to elements to do the styling for you
             below you will see the name "jumbotron" this is called a component or a pre made object you can use from bootstrap-->
 
-            <div class="jumbotron currentTheme">
 
-                <!--headers are commonly used at the top of websites similar to a letterhead-->
-
-                <header class="masthead text-center text-black">
-                    <div class="masthead-content">
-                        <div class="container">
-                        <br /><br /><br /><br /><br />
-                            <h1 class="display-3" type="text" placeholder="Welcome to my Website!" >${form1value}</h1>
-                            <br /><br /><br />
-                            <h2 id="h2Header"class="masthead-subheading mb-0">${form2value}</h2>
+            <section class="resume">
+            <div class="row">
+                <div class="col-md-3 col-sm-12 blue">
+                    <h1>${form1value}</h1>
+                    <h5>${form2value}</h5>
+                    <br /><br />
+                    <h3 class="title">Personal Info</h3>
+                    <h5>Address</h5>
+                    <h6>${form3value}</h6>
+                    <h5>Phone Number</h5>
+                    <h6>${form4value}</h6>
+                    <br /><br />
+                    <h3 class="title">Skills</h3>
+                    <p>${form5value}</p>
+                    <p>${form6value}</p>
+                    <p>${form7value}</p>
+                </div>
+    
+                <div class="col-md-1"></div>
+                <div class="col-md-7 col-sm-12">
+                    <br /><br />
+                    <h4 class="lines">Profile</h4>
+                    <p>${form8value}</p>
+                    <h4 class="lines">Work History</h4>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <p>${form9value} <br/> ${form10value}</p>
+                        </div>
+                        <div class="col-md-10">
+                            <h5>${form11value}</h5>
+                            <h6>${form12value}</h6>
+                            <ul>
+                                <li>${form13value}</li>
+                                <li>${form14value}</li>
+                                <li>${form15value}</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="bg-circle-1 bg-circle"></div>
-                    <div class="bg-circle-2 bg-circle"></div>
-                    <div class="bg-circle-3 bg-circle"></div>
-                    <div class="bg-circle-4 bg-circle"></div>
-                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-                </header>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <p>${form16value} <br/> ${form17value}</p>
+                        </div>
+                        <div class="col-md-10">
+                            <h5>${form18value}</h5>
+                            <h6>${form19value}</h6>
+                            <ul>
+                                <li>${form20value}</li>
+                                <li>${form21value}</li>
+                                <li>${form22value}</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <p>${form23value} <br/> ${form24value}</p>
+                        </div>
+                        <div class="col-md-10">
+                            <h5>${form25value}</h5>
+                            <h6>${form26value}</h6>
+                            <ul>
+                                <li>${form27value}</li>
+                                <li>${form28value}</li>
+                                <li>${form29value}</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h4 class="lines">Education</h4>
+                    <div class="row">
+                        <div class="col-md-2">
+                        </div>
+                        <div class="col-md-10">
+                            <h5>${form30value}</h5>
+                            <p>${form31value}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
             </div>
-
-            <!--when you split code into sections you get to work in what you can think of as building blocks
-            when you finish one section you can add another section below and when they all come together you have editable areas you can work in-->
-
-            <section>
-
-                <!--before we explained divs are like containers and this one we use the class of "container" to pull in the Bootstrap style
-                the name container here is only in reference to a style, the div is the actual container-->
-
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 order-lg-2">
-                            <div class="p-5">
-
-                                <!--here is where an image is added. there are 2 ways of adding images to your website
-                                below is one way where you call the URL of the picture that is already hosted online through some sort of image hosting website
-                                you may also use pictures you have on your computer with what is called routing where you store the images in a file and use
-                                a file route to tell your website where the image is. for ease and basic use we suggest doing it this way until you have a better
-                                understanding of the flow for your site
-                                this is an example of a self closing tag below notice how there is no </img> there is only a slash at the end of the line so make it self closing-->
-
-                                <img class="img-fluid rounded-circle" src="https://thumbs-prod.si-cdn.com/yxYtidKUcbMprBCzkC3AH2cnUQ4=/420x240/https://public-media.si-cdn.com/filer/54/10/5410da58-2295-4e3a-a847-fecd41cdcdd9/scarlet_tanager.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="col-lg-6 order-lg-1">
-                            <div class="p-5">
-                                <h2 class="display-4">${form3value}</h2>
-                                <p>${form4value}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--below you will see almost the same thing you saw in the previous section but with different information added in.-->
-
-            <section>
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="p-5">
-                                <img class="img-fluid rounded-circle" src="https://www.hakaimagazine.com/wp-content/uploads/header-gulf-birds.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="p-5">
-                                <h2 class="display-4">${form5value}</h2>
-                                <p>${form6value}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 order-lg-2">
-                            <div class="p-5">
-                                <img class="img-fluid rounded-circle" src="http://justbirding.com/wp-content/uploads/2018/11/most-colorful-birds-on-the-planet.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="col-lg-6 order-lg-1">
-                            <div class="p-5">
-                                <h2 class="display-4">${form7value}</h2>
-                                <p>${form8value}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--a footer tag is used very similar to a header tag but at the bottom of the page-->
-
-            <footer class="py-5 bg-black">
-                <div class="container">
-                    <p class="m-0 text-center text-black small">${form9value}</p>
-                </div>
-            </footer>
-        </div>
-
-        <!--these script tags you see are also a part of what is needed for Bootstrap to style everthing correctly
-        thier website getbootstrap.com has a wide variety of things you can add and edit to your page-->
-
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+        </section>
     </body>
 
 </html>`
@@ -203,52 +211,76 @@ class TemplateThree extends Component {
             <div>
                 <section className="resume">
                     <div className="row">
-                        <div className="col-md-1"></div>
-                        <div className="col-md-8 col-sm-12">
+                        <div className="col-md-3 col-sm-12 blue">
+                        <input type="text" id="name" placeholder="Bobby Jones" className="h3 text-center"></input>
+                        <br />
+                            <input type="text" id="occupation" placeholder="Software Programmer" className="h6 text-center"></input>
                             <br /><br />
-                            <p>Highly organized and meticulous Administrative Assistant with experience in corporate office
+                            <h3 class="title">Personal Info</h3>
+                            <h5>Address</h5>
+                            <input type="text" id="address" placeholder="San Diego, CA, 92116" className="h6 text-center"></input>
+                            <h5>Phone Number</h5>
+                            <input type="text" id="phoneNum" placeholder="(555)-555-5555" className="h6 text-center"></input>
+                            <br /><br /><br />
+                            <h3 class="title">Skills</h3>
+                            <input type="text" id="skillOne" placeholder="Time Management" className="h5 text-center"></input>
+                            <input type="text" id="skillTwo" placeholder="Decision Making" className="h5 text-center"></input>
+                            <input type="text" id="skillThree" placeholder="Communication" className="h5 text-center"></input>
+
+                        </div>
+
+                        <div className="col-md-1"></div>
+                        <div className="col-md-7 col-sm-12">
+                            <br /><br />
+                            <h4 className="lines">Profile</h4>
+                            <div className="container">
+                            <textarea type="text" id="profile" placeholder="Highly organized and meticulous Administrative Assistant with experience in corporate office
                                 settings.Adept at preparing and maintaining files, greeting visitors and restocking supplies. Good
-                    communicator and planner with strong judgment and critical thinking abilities.</p>
+                    communicator and planner with strong judgment and critical thinking abilities." className="bodyText"></textarea>
+                            </div>
                             <h4 className="lines">Work History</h4>
                             <div className="row">
                                 <div className="col-md-2">
-                                    <p>02/2018 - Current</p>
+                                    <input type="text" id="jobStart1" placeholder="02/2018 -" className="h6 date"></input>
+                                    <input type="text" id="jobEnd1" placeholder="Current" className="h6 date"></input>
                                 </div>
                                 <div className="col-md-10">
-                                    <h5>Administrative Assistant</h5>
-                                    <h6>Company A, San Diego, CA</h6>
+                                <input type="text" id="jobTitle1" placeholder="React Developer" className="h4"></input>
+                                <input type="text" id="jobDescription1" placeholder="Company A, San Francisco, CA" className="h6"></input>
                                     <ul>
-                                        <li>Screened all vistors and directed them to the correct employee or office.</li>
-                                        <li>Facilitated organized record retrieval and access.</li>
-                                        <li>Organized all new hire, security and temporary paperwork.</li>
+                                        <li><textarea type="text" id="taska1" className="TaskText" placeholder="Responsible for development of new highly-responsive, web-based user interface."></textarea></li>
+                                        <li><textarea type="text" id="taska2" className="TaskText" placeholder="Construct visualizations that are able to depict vast amounts of data."></textarea></li>
+                                        <li><textarea type="text" id="taska3" className="TaskText" placeholder="Work and collaborate with the rest of the engineering team."></textarea></li>
                                     </ul>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-md-2">
-                                    <p>06/2016 - 02/2018</p>
+                                <input type="text" id="jobStart2" placeholder="06/2016 -" className="h6 date"></input>
+                                    <input type="text" id="jobEnd2" placeholder="02/2018" className="h6 date"></input>
                                 </div>
                                 <div className="col-md-10">
-                                    <h5>Administrative Assistant</h5>
-                                    <h6>Company A, San Diego, CA</h6>
+                                <input type="text" id="jobTitle2" placeholder="Junior Designer" className="h4"></input>
+                                <input type="text" id="jobDescription2" placeholder="Company B, San Diego, CA" className="h6"></input>
                                     <ul>
-                                        <li>Screened all vistors and directed them to the correct employee or office.</li>
-                                        <li>Facilitated organized record retrieval and access.</li>
-                                        <li>Organized all new hire, security and temporary paperwork.</li>
+                                        <li><textarea type="text" id="taskb1" className="TaskText" placeholder="Producing clean, efficient code based on specifications."></textarea></li>
+                                        <li><textarea type="text" id="taskb2" className="TaskText" placeholder="Testing and deploying programs and systems."></textarea></li>
+                                        <li><textarea type="text" id="taskb3" className="TaskText" placeholder="Fixing and improving existing software."></textarea></li>
                                     </ul>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-md-2">
-                                    <p>08/2014 - 06/2016</p>
+                                    <input type="text" id="jobStart3" placeholder="08/2014 -" className="h6 date"></input>
+                                    <input type="text" id="jobEnd3" placeholder="06/2016" className="h6 date"></input>
                                 </div>
                                 <div className="col-md-10">
-                                    <h5>Administrative Assistant</h5>
-                                    <h6>Company A, San Diego, CA</h6>
+                                <input type="text" id="jobTitle3" placeholder="Multimedia Intern" className="h4"></input>
+                                <input type="text" id="jobDescription3" placeholder="Company C, San Diego, CA" className="h6"></input>
                                     <ul>
-                                        <li>Screened all vistors and directed them to the correct employee or office.</li>
-                                        <li>Facilitated organized record retrieval and access.</li>
-                                        <li>Organized all new hire, security and temporary paperwork.</li>
+                                        <li><textarea type="text" id="taskc1" className="TaskText" placeholder="Posted on Social Media and handled account maintenance."></textarea></li>
+                                        <li><textarea type="text" id="taskc2" className="TaskText" placeholder="Wrote Meta descriptions and tagging."></textarea></li>
+                                        <li><textarea type="text" id="taskc3" className="TaskText" placeholder="Updated Website content and cleaned-up SEO."></textarea></li>
                                     </ul>
                                 </div>
                             </div>
@@ -257,28 +289,12 @@ class TemplateThree extends Component {
                                 <div className="col-md-2">
                                 </div>
                                 <div className="col-md-10">
-                                    <h5>Bachelor of Arts</h5>
-                                    <p>
-                                        University of San Diego - San Diego, CA
-                        </p>
+                                <input type="text" id="degree" placeholder="Bachelor of Arts" className="h4"></input>
+                                <input type="text" id="school" placeholder="University of San Diego - San Diego, CA" className="h6"></input>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-3 col-sm-12 blue">
-                            <h1>Your Name</h1>
-                            <h5>Profession</h5>
-                            <br /><br />
-                            <h4>Personal Info</h4>
-                            <h6>Address</h6>
-                            <p>San Diego, CA, 92116</p>
-                            <br />
-                            <h4>Skills</h4>
-                            <ul>
-                                <li>Time management</li>
-                                <li>Time Letter prepatation</li>
-                                <li>Correspondence handling</li>
-                            </ul>
-                        </div>
+                        <div class="col-md-1"></div>
                     </div>
                 </section>
 
@@ -288,15 +304,37 @@ class TemplateThree extends Component {
                         <div className="col-lg-1 mx-auto">
                             <Link to="/thankyou">
                                 <button className="btn btn-primary" onClick={() => {
-                                    var formInput1 = document.getElementById("h1Input").value;
-                                    var formInput2 = document.getElementById("h2Input").value;
-                                    var formInput3 = document.getElementById("h3Input").value;
-                                    var formInput4 = document.getElementById("h4Input").value;
-                                    var formInput5 = document.getElementById("h5Input").value;
-                                    var formInput6 = document.getElementById("h6Input").value;
-                                    var formInput7 = document.getElementById("h7Input").value;
-                                    var formInput8 = document.getElementById("h8Input").value;
-                                    var formInput9 = document.getElementById("h9Input").value;
+                                    var formInput1 = document.getElementById("name").value;
+                                    var formInput2 = document.getElementById("occupation").value;
+                                    var formInput3 = document.getElementById("address").value;
+                                    var formInput4 = document.getElementById("phoneNum").value;
+                                    var formInput5 = document.getElementById("skillOne").value;
+                                    var formInput6 = document.getElementById("skillTwo").value;
+                                    var formInput7 = document.getElementById("skillThree").value;
+                                    var formInput8 = document.getElementById("profile").value;
+                                    var formInput9 = document.getElementById("jobStart1").value;
+                                    var formInput10 = document.getElementById("jobEnd1").value;
+                                    var formInput11 = document.getElementById("jobTitle1").value;
+                                    var formInput12 = document.getElementById("jobDescription1").value;
+                                    var formInput13 = document.getElementById("taska1").value;
+                                    var formInput14 = document.getElementById("taska2").value;
+                                    var formInput15 = document.getElementById("taska3").value;
+                                    var formInput16 = document.getElementById("jobStart2").value;
+                                    var formInput17 = document.getElementById("jobEnd2").value;
+                                    var formInput18 = document.getElementById("jobTitle2").value;
+                                    var formInput19 = document.getElementById("jobDescription1").value;
+                                    var formInput20 = document.getElementById("taskb1").value;
+                                    var formInput21 = document.getElementById("taskb2").value;
+                                    var formInput22 = document.getElementById("taskb3").value;
+                                    var formInput23 = document.getElementById("jobStart3").value;
+                                    var formInput24 = document.getElementById("jobEnd3").value;
+                                    var formInput25 = document.getElementById("jobTitle3").value;
+                                    var formInput26 = document.getElementById("jobDescription3").value;
+                                    var formInput27 = document.getElementById("taskc1").value;
+                                    var formInput28 = document.getElementById("taskc2").value;
+                                    var formInput29 = document.getElementById("taskc3").value;
+                                    var formInput30 = document.getElementById("degree").value;
+                                    var formInput31 = document.getElementById("school").value;
                                     this.componentDidUpdate()
                                     download("index.html",
                                         formInput1,
@@ -307,7 +345,29 @@ class TemplateThree extends Component {
                                         formInput6,
                                         formInput7,
                                         formInput8,
-                                        formInput9
+                                        formInput9,
+                                        formInput10,
+                                        formInput11,
+                                        formInput12,
+                                        formInput13,
+                                        formInput14,
+                                        formInput15,
+                                        formInput16,
+                                        formInput17,
+                                        formInput18,
+                                        formInput19,
+                                        formInput20,
+                                        formInput21,
+                                        formInput22,
+                                        formInput23,
+                                        formInput24,
+                                        formInput25,
+                                        formInput26,
+                                        formInput27,
+                                        formInput28,
+                                        formInput29,
+                                        formInput30,
+                                        formInput31
                                     )
                                 }}>download</button>
                             </Link>

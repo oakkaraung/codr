@@ -206,7 +206,7 @@ class TemplateTwo extends Component {
                                         <br></br>
                                         <textarea type="text" align="top" id="fiveInput" className="bodyText form-control-lg" placeholder="Use this section as a place to add some information about yourself. We designed this digital business card as a green answer to a commonly used networking tool. Wow your next contact with this simple, yet elegant bit of technology and save tons of money by not printing cards that will get lost in a wallet. Leave a lasting impression with a digital version catered to your information for free!"></textarea>
                                     </form>
-                                    <ReactTooltip id="form" aria-haspopup="true"  >
+                                    <ReactTooltip id="form" aria-haspopup="true">
                                         <p>using different H tags such as H1, H2 and etc, we can separate our input fields</p>
                                         <p>using the STYLE tag we can target individual tags, and style them</p>
 

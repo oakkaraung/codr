@@ -1,60 +1,75 @@
-.display-3 {
-    background: transparent !important;
-    border: 0px !important;
-    color:#fff;
+.blue {
+    background-color: rgb(30, 153, 153);
+    text-align: center;
+    padding-top:50px;
+    height:100vh;
 }
 
-.display-3::placeholder {
-    color: #fff;
-    opacity: 1; /* Firefox */
-  }
-
-.display-4 {
+.h3 {
     background: transparent !important;
     border: 0px !important;
+    color:#000;
+}
+.h3::placeholder {
+    color: rgba(56, 56, 56, 0.664);
+    opacity: 1; /* Firefox */
+}
+
+.h4 {
+    background: transparent !important;
+    border: 0px !important;
+    color:#000;
+}
+
+.h4::placeholder {
+    color: rgba(56, 56, 56, 0.664);
+    opacity: 1; /* Firefox */
+}
+
+.h5 {
+    background: transparent !important;
+    border: 0px !important;
+    color:#000;
+}
+.h5::placeholder {
+    color: rgba(56, 56, 56, 0.664);
+    opacity: 1; /* Firefox */
+}
+
+.h6 {
+    background: transparent !important;
+    border: 0px !important;
+    color:#000;
+    width:100%;
+}
+.h6::placeholder {
+    color: rgba(56, 56, 56, 0.664);
+    opacity: 1; /* Firefox */
+  }
+.title {
+    background-color:  rgb(2, 97, 97);
+    padding: 10px;
+    margin: 20px;
+}
+.lines {
+    border-bottom: 2px solid darkcyan;
+    justify-content: center;
+}
+.date {
+    width: 60%;
+   padding-bottom: -10px;
 }
 
 .bodyText {
     background: transparent !important;
     border: 0px !important;
-    width: 500px;
-    height: 300px;
+    width: 800px;
+    height: 100px;
     resize: none;
 }
-
-.tagline {
+.TaskText {
     background: transparent !important;
     border: 0px !important;
+    width: 700px;
+    height: 25px;
 }
-
-.webTheme {
-    background-color: #f55d42 !important;
-    background-image: url("https://images.pexels.com/photos/2346344/pexels-photo-2346344.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    background-size: 'cover';
-    background-size: 100% 800px;
-    height:680px;
-}
-
-
-.footercss {
-    background: transparent !important;
-    border: 0px !important;
-}
-
-.toptext {
-    background: transparent !important;
-    border: 0px !important;
-    font-size: 20px
-}
-
-.jumbotron {
-    border-radius: 0 !important;
-}
-
-#h2Input {
-    color:#fff;
-}
-#h2Input::placeholder {
-    color: #fff;
-    opacity: 1; /* Firefox */
-  }

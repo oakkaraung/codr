@@ -14,6 +14,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import TemplateOne from './pages/TemplateOne';
 import TemplateTwo from './pages/TemplateTwo';
+import TemplateThree from './pages/templateThree';
 import AboutUs from './pages/AboutUs';
 import ThankU from './pages/ThankU';
 
@@ -35,6 +36,7 @@ ReactDOM.render(
             <Route exact path="/profile" component={Profile} />
             <Route exact path="/templateone" component={TemplateOne} />
             <Route exact path="/templatetwo" component={TemplateTwo} />
+            <Route exact path="/templatethree" component={TemplateThree} />
             <Route exact path="/thankyou" component={ThankU} />
             </Switch>
         </div>

@@ -275,7 +275,7 @@ class TemplateThree extends Component {
                                 <div className="col-md-10">
                                 <input data-tip data-for="job" type="text" id="jobTitle2" placeholder="Junior Designer" className="h4"></input>
                                 <ReactTooltip id="job" aria-haspopup="true"  >
-                                <p>Don't forget to fill everything out!</p>
+                                    <p>Don't forget to fill everything out!</p>
                                 </ReactTooltip>
                                 <input type="text" id="jobDescription2" placeholder="Company B, San Diego, CA" className="h6"></input>
                                     <ul>
